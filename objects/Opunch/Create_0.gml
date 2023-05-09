@@ -4,19 +4,21 @@
 
 // Inherit the parent event
 event_inherited();
-
 interact = function() {
-	instance_create_depth(158,288,1,Opunchb)
-	instance_destroy()
 	global.train = true
-	if global.spri <= 0
-	{
-		Odigimon.sprite_index = Sgammatrain
-	}
-	if global.spri >= 1
-	{
-		Odigimon.sprite_index = Scannotrain
-	}
+	if global.train == true {
+		
+		if global.spri <= 0
+		{
+			Odigimon.sprite_index = Sgammatrain
+		}
+		if global.spri >= 1
+		{
+			Odigimon.sprite_index = Scannotrain
+		}	
+		instance_destroy()
+		instance_create_depth(159,288,1,Opunchb)
+}
 
 }
 

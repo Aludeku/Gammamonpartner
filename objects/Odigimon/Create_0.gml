@@ -19,3 +19,4 @@ if (global.spri == 0) {
 	{
 		sprite_index = Scanno;
 	}   
+	

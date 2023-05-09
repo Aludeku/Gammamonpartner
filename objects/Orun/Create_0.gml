@@ -6,7 +6,17 @@
 event_inherited();
 
 interact = function() {
-	//room_goto(Roomwalk);
+	global.run = true
+	if global.spri <= 0
+	{
+		Odigimon.sprite_index = Sgammarun
+	}
+	if global.spri >= 1
+	{
+		Odigimon.sprite_index = Scannorun
+	}
+	instance_destroy()
+	instance_create_depth(415,288,1,Orunback)
 }
 
 

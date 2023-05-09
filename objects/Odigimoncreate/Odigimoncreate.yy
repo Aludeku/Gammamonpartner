@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Slogo",
+    "path": "sprites/Slogo/Slogo.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
