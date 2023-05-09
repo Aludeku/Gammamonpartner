@@ -16,7 +16,7 @@ interact = function() {
 	{
 		Odigimon.sprite_index = Scanno
 	}
-	instance_create_depth(927,288,1,Owalk)
+	instance_create_depth(671,544,1,Owalk)
 	instance_destroy()
 }
 }

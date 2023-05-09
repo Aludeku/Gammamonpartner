@@ -1,6 +1,9 @@
 /// @description evolution
 // You can write your code in this editor
-
+global.train = false
+global.walk = false
+global.run = false
+global.sleep = false
 if global.spri >= 1
 {
 	global.spri -=1

@@ -8,6 +8,9 @@ event_inherited();
 interact = function() {
 	//room_goto_next()
 	global.walk = true
+	global.run = false
+	global.sleep = false
+	global.train = false
 	if global.spri <= 0
 	{
 		Odigimon.sprite_index = Srealgammawalk
@@ -16,7 +19,7 @@ interact = function() {
 	{
 		Odigimon.sprite_index = Scannowalk
 	}
-	instance_create_depth(927,288,1,Owalkb)
+	instance_create_depth(671,544,1,Owalkb)
 	instance_destroy()
 }
 

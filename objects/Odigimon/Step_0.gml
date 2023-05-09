@@ -11,3 +11,5 @@ if (room == Roomwalk)
 		sprite_index = Scannowalk
 	}
 }
+
+	

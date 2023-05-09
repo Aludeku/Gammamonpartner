@@ -8,7 +8,7 @@ event_inherited();
 interact = function() {
 	global.train = false
 	if global.train == false {
-		if global.spri <= 0
+	if global.spri <= 0
 	{
 		Odigimon.sprite_index = Srealgamma
 	}
@@ -17,7 +17,7 @@ interact = function() {
 		Odigimon.sprite_index = Scanno
 	}
 	instance_destroy()
-	instance_create_depth(159,288,1,Opunch)
+	instance_create_depth(159,544,1,Opunch)
 	
 	
 }
