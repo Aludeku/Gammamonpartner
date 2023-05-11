@@ -23,6 +23,7 @@ interact = function() {
 	}
 	instance_destroy()
 	instance_create_depth(928,544,1,Osleepb)
+	Ostatsbubble.sprite_index = Sbubbles
 }
 
 

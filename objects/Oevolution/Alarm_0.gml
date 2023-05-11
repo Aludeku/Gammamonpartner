@@ -10,5 +10,6 @@ if global.spri == 1
 	Odigimon.sprite_index = Scanno
 	audio_play_sound(SoundCannoweissmon,1,false)
 }
+global.Evolutionprocess = false
 instance_destroy()
 instance_create_depth(671,288,1,Oevolutionback)

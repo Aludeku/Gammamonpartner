@@ -12,4 +12,10 @@
  //   global.res_width = global.res_height * _display_ratio;
 //}
 
-
+if global.spri == 0
+{
+	sprite_index = Srealgamma
+}
+else {
+	sprite_index = Scanno
+}

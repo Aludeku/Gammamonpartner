@@ -7,7 +7,6 @@ event_inherited();
 
 interact = function() {
 	global.sleep = false
-
 	if global.spri <= 0
 	{
 		Odigimon.sprite_index = Srealgamma

@@ -6,8 +6,9 @@
 event_inherited();
 
 interact = function(){
-	information = true
+	global.information = true
 	instance_create_depth(950,820,-201,Ox)
+	instance_create_depth(544,2005,-201,Onext)
 	if global.spri == 0 {
 	instance_create_depth(530,1600,-200,Oinfobeta)
 	}

@@ -3,13 +3,14 @@
 global.run = false;
 global.walk = false;
 global.sleep = false;
-information = false
+global.information = false
+global.Evolutionprocess = false
 
 global.spri = 0;
 
 if (global.spri == 0) && (global.run == false) && (global.walk == false) && (global.sleep == false) {		
 		Odigimon.sprite_index = Srealgamma;
-}
+} 
 	else 
 	{
 		Odigimon.sprite_index = Scanno;
@@ -17,7 +18,7 @@ if (global.spri == 0) && (global.run == false) && (global.walk == false) && (glo
 	
 //	if (global.spri == 0) {		
 //		Odigimon.sprite_index = Srealgamma;
-//}
+//}               
 //	else 
 //	{ 
 //		Odigimon.sprite_index = Scanno;
