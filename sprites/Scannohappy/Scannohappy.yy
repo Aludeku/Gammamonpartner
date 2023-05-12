@@ -2,7 +2,7 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 7,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
@@ -24,18 +24,18 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","path":"sprites/Scannohappy/Scannohappy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","path":"sprites/Scannohappy/Scannohappy.yy",},"LayerId":{"name":"0b4706fa-c48c-483a-8a63-73ba0885623b","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Scannohappy","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","tags":[],"resourceType":"GMSpriteFrame",},
     {"compositeImage":{"FrameId":{"name":"b46b97f0-325d-47cc-a378-cedab3877cb6","path":"sprites/Scannohappy/Scannohappy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
         {"FrameId":{"name":"b46b97f0-325d-47cc-a378-cedab3877cb6","path":"sprites/Scannohappy/Scannohappy.yy",},"LayerId":{"name":"0b4706fa-c48c-483a-8a63-73ba0885623b","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
       ],"parent":{"name":"Scannohappy","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","name":"b46b97f0-325d-47cc-a378-cedab3877cb6","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","path":"sprites/Scannohappy/Scannohappy.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","path":"sprites/Scannohappy/Scannohappy.yy",},"LayerId":{"name":"0b4706fa-c48c-483a-8a63-73ba0885623b","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Scannohappy","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Scannohappy","path":"sprites/Scannohappy/Scannohappy.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 2.0,
+    "playbackSpeed": 3.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -44,8 +44,8 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"abc89161-7c49-45ea-bd7b-65f964dc48ff","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"7ffbba87-1237-401d-ab9d-64e09a0c6b32","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b46b97f0-325d-47cc-a378-cedab3877cb6","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"7ffbba87-1237-401d-ab9d-64e09a0c6b32","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b46b97f0-325d-47cc-a378-cedab3877cb6","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"abc89161-7c49-45ea-bd7b-65f964dc48ff","Key":1.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"eae43a5e-e9eb-46fa-b4eb-03448c8be075","path":"sprites/Scannohappy/Scannohappy.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -59,7 +59,7 @@
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
     "xorigin": 32,
-    "yorigin": 28,
+    "yorigin": 56,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Scannohappy","path":"sprites/Scannohappy/Scannohappy.yy",},
@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Canoweissmon",
+    "path": "folders/Sprites/Canoweissmon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Scannohappy",

@@ -7,7 +7,7 @@ event_inherited();
 
 interact = function(){
 	audio_play_sound(MegaEvolutionsound,1,false)
-alarm[0] = 180;
+alarm[0] = 120;
 global.train = false
 global.walk = false
 global.run = false

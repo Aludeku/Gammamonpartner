@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "gamma16",
+    "path": "folders/Sprites/gamma16.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sgammasleep",

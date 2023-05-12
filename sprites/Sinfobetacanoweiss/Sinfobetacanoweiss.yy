@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Canoweissmon",
+    "path": "folders/Sprites/Canoweissmon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sinfobetacanoweiss",

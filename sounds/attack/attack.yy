@@ -12,7 +12,7 @@
     "path": "audiogroups/audiogroup_default",
   },
   "soundFile": "attack.mp3",
-  "duration": 1.253878,
+  "duration": 0.522449,
   "parent": {
     "name": "Sounds",
     "path": "folders/Sounds.yy",

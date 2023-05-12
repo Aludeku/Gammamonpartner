@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Gammamon",
+    "path": "folders/Sprites/Gammamon.yy",
   },
   "resourceVersion": "1.0",
   "name": "INFObeta",

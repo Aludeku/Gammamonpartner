@@ -26,6 +26,18 @@ else if (room!= RoomPromptbattle && room!= Roombattle && audio_is_playing(Battle
 	audio_stop_sound(Battletheme);
 }
 
+if (room == Rvictory && !audio_is_playing(Victory_Screen)) {
+    audio_play_sound(Victory_Screen, 10, false);
+} else if (room != Rvictory && audio_is_playing(Victory_Screen)) {
+    audio_stop_sound(Victory_Screen);
+}
+if (room == Rdefeat && !audio_is_playing(game_over_screen)) {
+    audio_play_sound(game_over_screen, 10, false);
+} else if (room != Rdefeat && audio_is_playing(game_over_screen)) {
+    audio_stop_sound(game_over_screen);
+}
+
+
 //if (room == Roombattle || room = RoomPromptbattle) && (!audio_is_playing(Battletheme)) {
 //	audio_play_sound(Battletheme, 10, true);
 //}

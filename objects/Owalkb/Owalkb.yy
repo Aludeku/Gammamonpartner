@@ -30,8 +30,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Objbuttons",
+    "path": "folders/Objects/Objbuttons.yy",
   },
   "resourceVersion": "1.0",
   "name": "Owalkb",

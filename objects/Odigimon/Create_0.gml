@@ -12,10 +12,23 @@
  //   global.res_width = global.res_height * _display_ratio;
 //}
 
+
 if global.spri == 0
 {
+	image_xscale = 15
+	image_yscale = 15
 	sprite_index = Srealgamma
+	global.digimonvel = 5
+	global.digimonhp = 5
+	
 }
 else {
+	image_xscale = 15
+	image_yscale = 15
 	sprite_index = Scanno
+	global.digimonvel = 9
+	global.digimonhp = 8
 }
+
+
+

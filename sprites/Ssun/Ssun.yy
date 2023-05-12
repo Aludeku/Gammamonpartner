@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Sprites",
-    "path": "folders/Sprites.yy",
+    "name": "Statssprite",
+    "path": "folders/Sprites/Statssprite.yy",
   },
   "resourceVersion": "1.0",
   "name": "Ssun",

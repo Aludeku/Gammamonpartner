@@ -30,8 +30,8 @@
   ],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Oparents",
+    "path": "folders/Objects/Oparents.yy",
   },
   "resourceVersion": "1.0",
   "name": "button_gui_tap_parent",

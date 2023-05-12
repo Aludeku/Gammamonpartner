@@ -1,5 +1,6 @@
  /// @description Insert description here
 // You can write your code in this editor
+randomize();
 global.run = false;
 global.walk = false;
 global.sleep = false;
