@@ -2,16 +2,19 @@
 // You can write your code in this editor
 
 // Inherit the parent event
+randomize();
 event_inherited();
+global.rookievelbonus = irandom_range(1,4)
+global.championvelbonus = irandom_range(0,4)
+global.enemyvelbonus = irandom(5)
 global.digimonattack = false
 global.enemyattack = false
 global.battle = false
-global.enemyvel = irandom(9)
 interact = function() {
 	global.battle = true
 	//image_index = 1
 	
-	if (global.digimonvel >= global.enemyvel)
+	if ((global.digimonvel+global.rookievelbonus) >= (global.enemyvel+global.enemyvelbonus))
 		{
 			global.digimonattack = true
 			if global.spri == 0
@@ -34,13 +37,40 @@ interact = function() {
 			
 					
 		}
-	if (global.enemyvel >= global.digimonvel)
+	if ((global.enemyvel+global.enemyvelbonus) >= (global.digimonvel+global.rookievelbonus))
 		{	
 			global.enemyattack = true
-			Oenemy.sprite_index = Sagumon2006atk
-			if !instance_exists(Oenemyattack)
+			if global.enemyid = 0
 			{
-				instance_create_depth(815,1480,-10,Oenemyattack)
+				Oenemy.sprite_index = Sagumon2006atk
+				if !instance_exists(Oenemyattack)
+				{
+					instance_create_depth(815,1480,-10,Oenemyattack)
+				}
+			}
+			if global.enemyid = 1
+			{
+				Oenemy.sprite_index = Sgeoatk
+				if !instance_exists(Oenemyattack)
+				{
+					instance_create_depth(815,1480,-10,Oenemyattack)
+				}
+			}
+			if global.enemyid = 2
+			{
+				Oenemy.sprite_index = Sterrieratk
+				if !instance_exists(Oenemyattack)
+				{
+					instance_create_depth(815,1480,-10,Oenemyattack)
+				}
+			}
+			if global.enemyid = 3
+			{
+				Oenemy.sprite_index = Sarresteratk
+				if !instance_exists(Oenemyattack)
+				{
+					instance_create_depth(815,1480,-10,Oenemyattack)
+				}
 			}
 	}
 	

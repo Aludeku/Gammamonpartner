@@ -7,6 +7,8 @@ event_inherited();
 
 interact = function() {
 	//room_goto_next()
+	draw_text(600,1200,"atk = ");
+	draw_sprite(Sgeo,1,300,1900)
 	global.walk = true
 	if global.walk == true
 	{

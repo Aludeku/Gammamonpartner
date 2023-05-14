@@ -1,3 +1,3 @@
-/// @description Show results and come back
+/// @description room_goto(Rdefeat)
 // You can write your code in this editor
-room_goto(Room1)
+

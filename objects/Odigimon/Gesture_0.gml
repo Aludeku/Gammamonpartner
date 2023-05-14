@@ -14,3 +14,8 @@ if (global.information == false) && (room != Roombattle) && (room != Rdefeat) &&
 		sprite_index = Scannohappy
 	}
 }
+if room == Roombattle
+{
+	instance_create_depth(530,1600,-200,Oinfobeta)
+	instance_create_depth(950,820,-201,Ox)
+}

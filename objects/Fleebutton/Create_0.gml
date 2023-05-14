@@ -6,8 +6,8 @@
 event_inherited();
 
 interact = function() {
-	alarm[0] = 120;
-	audio_stop_sound(Earlybattle)
+	alarm[0] = 90;
+	audio_stop_sound(Battletheme)
 	if global.spri == 0
 	{
 		Odigimon.sprite_index = Sgammarun

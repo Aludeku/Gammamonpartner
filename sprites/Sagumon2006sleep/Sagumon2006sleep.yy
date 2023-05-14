@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Agumon2006",
-    "path": "folders/Sprites/Agumon2006.yy",
+    "path": "folders/Sprites/Enemies/Agumon2006.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sagumon2006sleep",

@@ -23,7 +23,7 @@ draw_healthbar(x1,y1,x2,y2, amount, c_black, c_red, c_green, 0, true, true);
 if global.spri == 0
 {
 	draw_sprite(slifebar,0,288,1475);
-	draw_text(280,1438,hp_current);
+	draw_text(280,1439,hp_current);
 }
 
 if global.spri == 1

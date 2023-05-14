@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Geogreymon",
-    "path": "folders/Sprites/Geogreymon.yy",
+    "path": "folders/Sprites/Enemies/Geogreymon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sgeo",

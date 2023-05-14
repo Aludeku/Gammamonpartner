@@ -11,23 +11,24 @@
 
  //   global.res_width = global.res_height * _display_ratio;
 //}
-
-
 if global.spri == 0
 {
 	image_xscale = 15
 	image_yscale = 15
 	sprite_index = Srealgamma
-	global.digimonvel = 5
-	global.digimonhp = 5
+	global.digimonvel = 2 
+	global.digimonhp = 6 //1000
+	global.digimonatk = 1  //irandom_range(150,200)
 	
 }
 else {
 	image_xscale = 15
 	image_yscale = 15
 	sprite_index = Scanno
-	global.digimonvel = 9
-	global.digimonhp = 8
+	global.digimonvel = 4
+	global.digimonhp = 10 //1500
+	global.digimonatk = 2  //irandom_range(200,300)
+
 }
 
 

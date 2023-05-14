@@ -1,5 +1,7 @@
  /// @description Insert description here
 // You can write your code in this editor
+randomize();
+
 if (room == Room1 && !audio_is_playing(Savedata)) {
     audio_play_sound(Savedata, 10, 1);
 } else if (room != Room1 && audio_is_playing(Savedata)) {
