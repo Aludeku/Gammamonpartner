@@ -12,7 +12,7 @@ global.train = false
 global.walk = false
 global.run = false
 global.sleep = false
-if global.spri == 0
+if global.some_data.digimonid == 0
 {
 	Odigimon.sprite_index = Sevogammacanno
 }

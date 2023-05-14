@@ -11,7 +11,7 @@
 
  //   global.res_width = global.res_height * _display_ratio;
 //}
-if global.spri == 0
+if global.some_data.digimonid == 0
 {
 	image_xscale = 15
 	image_yscale = 15

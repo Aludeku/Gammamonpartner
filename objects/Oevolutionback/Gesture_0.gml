@@ -4,11 +4,11 @@ global.train = false
 global.walk = false
 global.run = false
 global.sleep = false
-if global.spri >= 1
+if global.some_data.digimonid >= 1
 {
-	global.spri -=1
+	global.some_data.digimonid -=1
 }
-if global.spri <= 1
+if global.some_data.digimonid <= 1
 {
 	Odigimon.sprite_index = Srealgamma
 }

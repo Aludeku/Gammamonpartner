@@ -2,11 +2,11 @@
 // You can write your code in this editor
 audio_play_sound(Betterbeep,1,false)
 instance_destroy(Oinfoevolution)
-if global.spri == 0
+if global.some_data.digimonid == 0
 {
 	instance_create_depth(530,1600,-200,Oinfobeta)
 }
-if global.spri == 1
+if global.some_data.digimonid == 1
 {
 	instance_create_depth(530,1600,-200,Oinfobetacano)
 }

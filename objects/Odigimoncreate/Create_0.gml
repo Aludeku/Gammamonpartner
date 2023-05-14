@@ -4,26 +4,26 @@ global.run = false;
 if global.run == true
 {
 	Odigimon.sprite_index = Sgammarun
+}	
+global.some_data = {
+	digimonid : 0,
+	age : 0,
+	battles : 0,
 }
+	
 global.walk = false;
 global.sleep = false;
 global.information = false
 global.Evolutionprocess = false
 global.enemyid = irandom_range(0,1)
-global.spri = 0;
+global.some_data.digimonid = 0;
 
-if (global.spri == 0) && (global.run == false) && (global.walk == false) && (global.sleep == false) {		
-		Odigimon.sprite_index = Srealgamma;
-} 
-	else 
-	{
-		Odigimon.sprite_index = Scanno;
-	}   
-	
-//	if (global.spri == 0) {		
+
+//if (global.some_data.digimonid == 0) && (global.run == false) && (global.walk == false) && (global.sleep == false) {		
 //		Odigimon.sprite_index = Srealgamma;
-//}               
+//} 
 //	else 
-//	{ 
+//	{
 //		Odigimon.sprite_index = Scanno;
 //	}   
+ 

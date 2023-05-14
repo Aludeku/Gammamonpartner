@@ -13,11 +13,11 @@ interact = function() {
 		global.train = false
 		global.walk = false
 	}
-	if global.spri <= 0
+	if global.some_data.digimonid <= 0
 	{
 		Odigimon.sprite_index = Srealgammasleep
 	}
-	if global.spri >= 1
+	if global.some_data.digimonid >= 1
 	{
 		Odigimon.sprite_index = Scannosleep
 	}

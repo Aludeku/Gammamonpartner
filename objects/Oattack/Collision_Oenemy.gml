@@ -3,11 +3,11 @@
 instance_create_depth(542,2142,1,Obattlebutton)
 audio_play_sound(hit,1, false)
 
-if global.spri == 0
+if global.some_data.digimonid == 0
 {
 	Odigimon.sprite_index = Srealgamma
 }
-if global.spri == 1
+if global.some_data.digimonid == 1
 {
 	Odigimon.sprite_index = Scanno
 }

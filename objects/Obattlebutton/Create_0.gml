@@ -17,7 +17,7 @@ interact = function() {
 	if ((global.digimonvel+global.rookievelbonus) >= (global.enemyvel+global.enemyvelbonus))
 		{
 			global.digimonattack = true
-			if global.spri == 0
+			if global.some_data.digimonid == 0
 			{
 				Odigimon.sprite_index = Srealgammaattack
 				if !instance_exists(Oattack)
@@ -25,7 +25,7 @@ interact = function() {
 				instance_create_depth(340,1850,-10,Oattack)
 			}
 			}
-			if global.spri == 1
+			if global.some_data.digimonid == 1
 			{	
 				Odigimon.sprite_index = Scannoattack
 				if !instance_exists(Oattack)

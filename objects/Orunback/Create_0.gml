@@ -9,11 +9,11 @@ interact = function() {
 global.run = false
 
 if global.run == false {
-	if global.spri <= 0
+	if global.some_data.digimonid <= 0
 	{
 		Odigimon.sprite_index = Srealgamma
 	}
-	if global.spri >= 1
+	if global.some_data.digimonid >= 1
 	{
 		Odigimon.sprite_index = Scanno
 	}

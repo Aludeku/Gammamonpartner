@@ -8,7 +8,7 @@ event_inherited();
 interact = function() {
 	alarm[0] = 90;
 	audio_stop_sound(Battletheme)
-	if global.spri == 0
+	if global.some_data.digimonid == 0
 	{
 		Odigimon.sprite_index = Sgammarun
 		Odigimon.image_xscale = 10
@@ -16,7 +16,7 @@ interact = function() {
 		
 
 	}
-	if global.spri == 1
+	if global.some_data.digimonid == 1
 	{
 		Odigimon.sprite_index = Scannorun
 		Odigimon.image_xscale = 10
