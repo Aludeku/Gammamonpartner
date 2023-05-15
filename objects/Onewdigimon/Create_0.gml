@@ -3,3 +3,4 @@
 global.some_data.digimonid = 0
 global.some_data.age = 0
 global.some_data.battles = 0
+
