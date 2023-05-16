@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Canoweissmon",
-    "path": "folders/Sprites/Canoweissmon.yy",
+    "path": "folders/Sprites/Gammamon/Canoweissmon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Scanno",

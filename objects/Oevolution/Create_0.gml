@@ -14,7 +14,11 @@ global.run = false
 global.sleep = false
 if global.some_data.digimonid == 0
 {
-	Odigimon.sprite_index = Sevogammacanno
+	Odigimon.sprite_index = Sevogammabetel
+}
+if global.some_data.digimonid == 1
+{
+	Odigimon.sprite_index = Sevobetelcano
 }
 	
 }

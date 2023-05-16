@@ -24,7 +24,8 @@ if global.some_data.digimonid == 1
 	global.digimonhp = 10 
 	global.digimonatk = 2
 }
-if (room == Roombattle) && (sprite_index != Sgammarun) && (sprite_index != Scannorun)
+//for in battle be facing the opponent
+if (room == Roombattle) && (global.run != true) //unecessary: && (sprite_index != Sgammarun) && (sprite_index != Scannorun) && (sprite_index!= Sbetelrun)
 {
 	image_xscale = -10
 	image_yscale = 10
@@ -38,6 +39,10 @@ if (room == Rvictory)
 	}
 		if global.some_data.digimonid == 1
 	{
+		Odigimon.sprite_index = Sbetelhappy
+	}
+		if global.some_data.digimonid == 2
+	{
 		Odigimon.sprite_index = Scannohappy
 	}
 }
@@ -50,9 +55,29 @@ if (room == Rdefeat)
 	}
 		if global.some_data.digimonid == 1
 	{
+		Odigimon.sprite_index = Sbetelhappy
+	}
+		if global.some_data.digimonid == 2
+	{
 		Odigimon.sprite_index = Scannosleep
 	}
 }
 
-
-
+if global.sleep == false && global.train == false && global.run == false && global.walk == false 
+&& global.Evolutionprocess == false && global.digimonattack == false && global.damage == false
+&& room != Rvictory && room != Rdefeat
+{
+	if global.some_data.digimonid == 0
+	{
+		sprite_index = Srealgamma
+	}
+	if global.some_data.digimonid == 1
+	{
+		sprite_index = Sbetel
+	}
+	if global.some_data.digimonid == 2
+	{
+		sprite_index = Scanno
+	}
+	
+}

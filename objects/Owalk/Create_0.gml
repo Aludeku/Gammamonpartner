@@ -22,11 +22,15 @@ interact = function() {
 	}
 	if global.some_data.digimonid >= 1
 	{
+		Odigimon.sprite_index = Sbetelwalk
+	}
+	if global.some_data.digimonid >= 2
+	{
 		Odigimon.sprite_index = Scannowalk
 	}
 	instance_create_depth(671,544,1,Owalkb)
 	instance_destroy()
-	Ostatsbubble.sprite_index = Sbubbles
+	
 }
 
 

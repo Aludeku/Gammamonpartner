@@ -1,3 +1,4 @@
 /// @description Insert description here
 // You can write your code in this editor
-tap = true
+global.some_data.bgimage = 2;
+

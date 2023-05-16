@@ -35,7 +35,7 @@
     "spriteId": {"name":"Scannohappy","path":"sprites/Scannohappy/Scannohappy.yy",},
     "timeUnits": 1,
     "playback": 1,
-    "playbackSpeed": 3.0,
+    "playbackSpeed": 2.0,
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Canoweissmon",
-    "path": "folders/Sprites/Canoweissmon.yy",
+    "path": "folders/Sprites/Gammamon/Canoweissmon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Scannohappy",

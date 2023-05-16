@@ -11,7 +11,7 @@ interact = function() {
 	{
 		Odigimon.sprite_index = Srealgamma
 	}
-	if global.some_data.digimonid >= 1
+	if global.some_data.digimonid == 2
 	{
 		Odigimon.sprite_index = Scanno
 	}

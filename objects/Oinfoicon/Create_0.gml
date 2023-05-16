@@ -13,6 +13,9 @@ interact = function(){
 	instance_create_depth(530,1600,-200,Oinfobeta)
 	}
 	if global.some_data.digimonid == 1 {
+	instance_create_depth(530,1600,-200,Oinfo)
+	}
+	if global.some_data.digimonid == 2 {
 	instance_create_depth(530,1600,-200,Oinfobetacano)
 	}
 }

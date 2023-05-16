@@ -5,7 +5,6 @@
 randomize();
 event_inherited();
 global.rookievelbonus = irandom_range(1,4)
-global.championvelbonus = irandom_range(0,4)
 global.enemyvelbonus = irandom(5)
 global.digimonattack = false
 global.enemyattack = false
@@ -26,6 +25,15 @@ interact = function() {
 			}
 			}
 			if global.some_data.digimonid == 1
+			{	
+				Odigimon.sprite_index = Sbetelatk
+				if !instance_exists(Oattack)
+			{
+				instance_create_depth(400,1700,-10,Oattack)
+				//Oattack.sprite_index = atk_s_05
+			}
+			}
+			if global.some_data.digimonid == 2
 			{	
 				Odigimon.sprite_index = Scannoattack
 				if !instance_exists(Oattack)

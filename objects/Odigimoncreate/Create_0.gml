@@ -9,6 +9,7 @@ global.some_data = {
 	digimonid : 0,
 	age : 0,
 	battles : 0,
+	bgimage : 0,
 }
 	
 global.walk = false;

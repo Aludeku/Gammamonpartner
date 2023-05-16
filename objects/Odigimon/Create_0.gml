@@ -11,6 +11,13 @@
 
  //   global.res_width = global.res_height * _display_ratio;
 //}
+global.train = false
+global.run = false
+global.sleep = false
+global.walk = false
+global.Evolutionprocess = false
+global.digimonattack = false
+global.damage = false
 if global.some_data.digimonid == 0
 {
 	image_xscale = 15
@@ -21,7 +28,17 @@ if global.some_data.digimonid == 0
 	global.digimonatk = 1  //irandom_range(150,200)
 	
 }
-else {
+if global.some_data.digimonid == 1
+{
+	image_xscale = 15
+	image_yscale = 15
+	sprite_index = Sbetel
+	global.digimonvel = 4
+	global.digimonhp = 10 //1500
+	global.digimonatk = 2  //irandom_range(200,300)
+
+}
+if global.some_data.digimonid == 2 {
 	image_xscale = 15
 	image_yscale = 15
 	sprite_index = Scanno
