@@ -10,3 +10,7 @@ played_hours=   floor(time_current/3600000)
 if played_seconds < 10 played_seconds = "0" + string(played_seconds) else played_seconds = string(played_seconds);
 if played_minutes < 10 played_minutes = "0" + string(played_minutes) else played_minutes = string(played_minutes);
 if played_hours < 10 played_hours = "0" + string(played_hours) else played_hours = string(played_hours);
+myminute = date_get_minute(date_current_datetime())
+global.some_data.timerevolution = myminute
+
+

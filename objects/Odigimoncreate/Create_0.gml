@@ -1,5 +1,6 @@
  /// @description Insert description here
 // You can write your code in this editor
+
 global.run = false;
 if global.run == true
 {
@@ -10,6 +11,8 @@ global.some_data = {
 	age : 0,
 	battles : 0,
 	bgimage : 0,
+	timerevolution: 0,
+	hunger: 0,
 }
 	
 global.walk = false;
@@ -27,4 +30,4 @@ global.some_data.digimonid = 0;
 //	{
 //		Odigimon.sprite_index = Scanno;
 //	}   
- 
+

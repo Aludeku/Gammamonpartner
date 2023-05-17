@@ -55,7 +55,7 @@ if (room == Rdefeat)
 	}
 		if global.some_data.digimonid == 1
 	{
-		Odigimon.sprite_index = Sbetelhappy
+		Odigimon.sprite_index = Sbetelsleep
 	}
 		if global.some_data.digimonid == 2
 	{
@@ -65,7 +65,7 @@ if (room == Rdefeat)
 
 if global.sleep == false && global.train == false && global.run == false && global.walk == false 
 && global.Evolutionprocess == false && global.digimonattack == false && global.damage == false
-&& room != Rvictory && room != Rdefeat
+&& room != Rvictory && room != Rdefeat && global.tap == false && global.eating == false
 {
 	if global.some_data.digimonid == 0
 	{
@@ -80,4 +80,20 @@ if global.sleep == false && global.train == false && global.run == false && glob
 		sprite_index = Scanno
 	}
 	
+}
+
+if global.eating == true
+{
+	if global.some_data.digimonid == 0
+	{
+		sprite_index = Srealgammaeating;
+	}
+	if global.some_data.digimonid == 1
+	{
+		sprite_index = Sbeteleating;
+	}
+	if global.some_data.digimonid == 2
+	{
+		sprite_index = Scannoeating;
+	}
 }

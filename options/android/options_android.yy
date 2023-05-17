@@ -25,7 +25,7 @@
   "option_android_sleep_margin": 4,
   "option_android_splash_screens_landscape": "splash/landscape.png",
   "option_android_splash_screens_portrait": "splash/portrait.png",
-  "option_android_splash_time": 1,
+  "option_android_splash_time": 0,
   "option_android_launchscreen_fill": 1,
   "option_android_splashscreen_background_colour": 255,
   "option_android_tv_banner": "${base_options_dir}/android/tv_banner.png",

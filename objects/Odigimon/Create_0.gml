@@ -11,6 +11,8 @@
 
  //   global.res_width = global.res_height * _display_ratio;
 //}
+global.eating = false
+global.tap = false
 global.train = false
 global.run = false
 global.sleep = false

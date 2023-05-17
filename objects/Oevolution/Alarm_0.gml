@@ -8,6 +8,7 @@ if global.some_data.digimonid < 2
 if global.some_data.digimonid == 1
 {
 	Odigimon.sprite_index = Sbetel
+	audio_play_sound(SbetelGammamon__vocals_,1,false);
 	
 }
 if global.some_data.digimonid == 2
