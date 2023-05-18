@@ -4,7 +4,7 @@ event_inherited()
 if room == RoomPromptbattle
 {
 	randomise();
-	global.enemyid = irandom(3)
+	global.enemyid = irandom(5)
 }
 if global.enemyid == 0
 {
@@ -29,6 +29,18 @@ if global.enemyid == 3
 	sprite_index = Ssplasharrester //Arresterdramon
 	image_xscale = 2
 	image_yscale = 2
+}
+if global.enemyid == 4
+{
+	sprite_index = Ssplashgabumon //gabumon claramente
+	image_xscale = 2
+	image_yscale = 2
+}
+if global.enemyid == 5
+{
+	sprite_index = Ssplashomnimon //omnimon
+	image_xscale = 3
+	image_yscale = 3
 }
 interact = function(){
   room_goto(Roombattle)

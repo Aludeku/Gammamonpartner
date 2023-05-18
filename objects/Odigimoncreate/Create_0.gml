@@ -13,6 +13,11 @@ global.some_data = {
 	bgimage : 0,
 	timerevolution: 0,
 	hunger: 0,
+	maxhunger: 0,
+	stamina: 0,
+	maxstamina: 0,
+	experience: 0,
+	level: 0,
 }
 	
 global.walk = false;

@@ -19,5 +19,4 @@ if global.some_data.digimonid == 2
 	instance_create_depth(671,288,1,Oevolutionback)
 }
 global.Evolutionprocess = false
-
-
+global.some_data.hunger -= 1

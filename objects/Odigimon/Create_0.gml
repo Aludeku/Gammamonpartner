@@ -28,6 +28,8 @@ if global.some_data.digimonid == 0
 	global.digimonvel = 2 
 	global.digimonhp = 6 //1000
 	global.digimonatk = 1  //irandom_range(150,200)
+	global.digimontype = "virus"
+	global.digimontier = "rookie"
 	
 }
 if global.some_data.digimonid == 1
@@ -38,15 +40,23 @@ if global.some_data.digimonid == 1
 	global.digimonvel = 4
 	global.digimonhp = 10 //1500
 	global.digimonatk = 2  //irandom_range(200,300)
+	global.digimontype = "vaccine"
+	global.digimontier = "champion"
+
+
 
 }
 if global.some_data.digimonid == 2 {
 	image_xscale = 15
 	image_yscale = 15
 	sprite_index = Scanno
-	global.digimonvel = 4
-	global.digimonhp = 10 //1500
+	global.digimonvel = 5
+	global.digimonhp = 15 //1500
 	global.digimonatk = 2  //irandom_range(200,300)
+	global.digimontype = "vaccine"
+	global.digimontier = "champion"
+
+
 
 }
 

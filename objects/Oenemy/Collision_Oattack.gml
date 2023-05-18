@@ -17,3 +17,11 @@ if global.enemyid == 3
 {
 	sprite_index = Sarrestersleep
 }
+if global.enemyid == 4
+{
+	sprite_index = Sgabumonsleep
+}
+if global.enemyid == 5
+{
+	sprite_index = Somnimondamage
+}

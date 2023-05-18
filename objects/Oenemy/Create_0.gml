@@ -37,4 +37,20 @@ if global.enemyid == 3 //Arrester
 	global.enemyatk = 1 + irandom_range(0,2)
 	
 }
+if global.enemyid == 4 //Gabumon
+{
+	sprite_index = Sgabumon
+	global.enemyvel = 2 //+ irandom_range(0,3)
+	global.enemyhp = 7
+	global.enemyatk = 1 + irandom_range(0,2)
+	
+}
+if global.enemyid == 5 //Omnimon
+{
+	sprite_index = Somnimonidle
+	global.enemyvel = 5 //+ irandom_range(0,3)
+	global.enemyhp = 30
+	global.enemyatk = 2 + irandom_range(0,1)
+	
+}
 

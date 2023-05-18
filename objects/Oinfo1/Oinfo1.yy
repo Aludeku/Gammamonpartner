@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "infovaccinechampion",
-    "path": "sprites/infovaccinechampion/infovaccinechampion.yy",
+    "name": "Sinfotemplate",
+    "path": "sprites/Sinfotemplate/Sinfotemplate.yy",
   },
   "solid": false,
   "visible": true,

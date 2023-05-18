@@ -5,9 +5,12 @@
 // Inherit the parent event
 event_inherited();
 
+
 interact = function() {
-	if image_index == 0{
+	if !image_index == 1 && global.sleep = false 
+	{
 		instance_create_depth(415,544,-200,Ofood)
-		global.some_data.hunger += 1
+		global.some_data.hunger += 1	
+		
 	}
 }

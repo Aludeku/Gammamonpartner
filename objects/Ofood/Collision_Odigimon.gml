@@ -11,5 +11,5 @@ if global.some_data.digimonid == 1
 }
 if global.some_data.digimonid == 2
 {
-	instance_create_depth(330, 1500,-200,Ofoodanimation)
+	instance_create_depth(280, 1600,-200,Ofoodanimation)
 }

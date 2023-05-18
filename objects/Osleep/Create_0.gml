@@ -6,28 +6,36 @@
 event_inherited();
 
 interact = function() {
-	global.sleep = true
+	Ostamina.alarm[0] = 2400;
+	instance_destroy(Ofood)
+	instance_destroy(Ofoodanimation)
+	if global.eating == false
+	{
+		global.sleep = true
+	}
 	if global.sleep == true
 	{
 		global.run = false
 		global.train = false
 		global.walk = false
+		global.eating = false
+
+		if global.some_data.digimonid <= 0
+		{
+			Odigimon.sprite_index = Srealgammasleep
+		}
+		if global.some_data.digimonid == 1
+		{
+			Odigimon.sprite_index = Sbetelsleep
+		}
+		if global.some_data.digimonid == 2
+		{
+			Odigimon.sprite_index = Scannosleep
+		}
+		instance_destroy()
+		instance_create_depth(928,544,1,Osleepb)
+		instance_create_depth(96,1536,1,Ostatsbubble)
 	}
-	if global.some_data.digimonid <= 0
-	{
-		Odigimon.sprite_index = Srealgammasleep
-	}
-	if global.some_data.digimonid == 1
-	{
-		Odigimon.sprite_index = Sbetelsleep
-	}
-	if global.some_data.digimonid == 2
-	{
-		Odigimon.sprite_index = Scannosleep
-	}
-	instance_destroy()
-	instance_create_depth(928,544,1,Osleepb)
-	Ostatsbubble.sprite_index = Sbubbles
 }
 
 

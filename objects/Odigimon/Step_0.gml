@@ -1,4 +1,4 @@
-/// @description Insert description here
+ /// @description Insert description here
 // You can write your code in this editor
 //if (room == Roomwalk)
 //{
@@ -12,18 +12,32 @@
 //	}
 //}
 //global.some_data.digimonid = global.some_data.digimonid
+
 if global.some_data.digimonid == 0
 {
 	global.digimonvel = 2 
 	global.digimonhp = 6 
 	global.digimonatk = 1
+	global.digimontype = "virus"
+	global.digimontier = "rookie"
 }
 if global.some_data.digimonid == 1
 {
 	global.digimonvel = 4
 	global.digimonhp = 10 
 	global.digimonatk = 2
+	global.digimontype = "vaccine"
+	global.digimontier = "champion"
 }
+if global.some_data.digimonid == 2
+{
+	global.digimonvel = 5
+	global.digimonhp = 15 
+	global.digimonatk = 2
+	global.digimontype = "vaccine"
+	global.digimontier = "ultimate"
+}
+
 //for in battle be facing the opponent
 if (room == Roombattle) && (global.run != true) //unecessary: && (sprite_index != Sgammarun) && (sprite_index != Scannorun) && (sprite_index!= Sbetelrun)
 {
@@ -82,7 +96,7 @@ if global.sleep == false && global.train == false && global.run == false && glob
 	
 }
 
-if global.eating == true
+if global.eating == true && global.sleep == false
 {
 	if global.some_data.digimonid == 0
 	{

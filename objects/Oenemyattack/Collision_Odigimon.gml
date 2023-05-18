@@ -18,6 +18,14 @@ if global.enemyid == 3
 {
 	Oenemy.sprite_index = Sarrester
 }
+if global.enemyid == 4
+{
+	Oenemy.sprite_index = Sgabumon
+}
+if global.enemyid == 5
+{
+	Oenemy.sprite_index = Somnimonidle
+}
 global.battle = false
 global.enemyattack = false
 Ohealthbar.hp_current = (Ohealthbar.hp_current-global.enemyatk-irandom_range(0,1))

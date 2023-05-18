@@ -30,7 +30,7 @@ interact = function() {
 				if !instance_exists(Oattack)
 			{
 				instance_create_depth(400,1700,-10,Oattack)
-				//Oattack.sprite_index = atk_s_05
+				Oattack.sprite_index = atk_s_16
 			}
 			}
 			if global.some_data.digimonid == 2
@@ -39,7 +39,7 @@ interact = function() {
 				if !instance_exists(Oattack)
 			{
 				instance_create_depth(400,1700,-10,Oattack)
-				//Oattack.sprite_index = atk_s_05
+				Oattack.sprite_index = atk_l_17
 			}
 			}
 			
@@ -53,7 +53,7 @@ interact = function() {
 				Oenemy.sprite_index = Sagumon2006atk
 				if !instance_exists(Oenemyattack)
 				{
-					instance_create_depth(815,1480,-10,Oenemyattack)
+					instance_create_depth(815,1380,-10,Oenemyattack)
 				}
 			}
 			if global.enemyid = 1
@@ -61,7 +61,7 @@ interact = function() {
 				Oenemy.sprite_index = Sgeoatk
 				if !instance_exists(Oenemyattack)
 				{
-					instance_create_depth(815,1480,-10,Oenemyattack)
+					instance_create_depth(815,1280,-10,Oenemyattack)
 				}
 			}
 			if global.enemyid = 2
@@ -69,7 +69,8 @@ interact = function() {
 				Oenemy.sprite_index = Sterrieratk
 				if !instance_exists(Oenemyattack)
 				{
-					instance_create_depth(815,1480,-10,Oenemyattack)
+					instance_create_depth(815,1280,-10,Oenemyattack)
+					Oenemyattack.sprite_index = atk_s_33
 				}
 			}
 			if global.enemyid = 3
@@ -77,11 +78,31 @@ interact = function() {
 				Oenemy.sprite_index = Sarresteratk
 				if !instance_exists(Oenemyattack)
 				{
-					instance_create_depth(815,1480,-10,Oenemyattack)
+					instance_create_depth(815,1280,-10,Oenemyattack)
+					Oenemyattack.sprite_index = atk_s_11
+
 				}
 			}
-	}
+			if global.enemyid = 4
+			{
+				Oenemy.sprite_index = Sgabumonatk
+				if !instance_exists(Oenemyattack)
+				{
+					instance_create_depth(815,1280,-10,Oenemyattack)
+					Oenemyattack.sprite_index = atk_s_01
+				}
+			}
+			if global.enemyid = 5
+			{
+				Oenemy.sprite_index = Somnimonenemyatksword
+				if !instance_exists(Oenemyattack)
+				{
+					instance_create_depth(815,1280,-10,Oenemyattack)
+					Oenemyattack.sprite_index = atk_l_02
+				}
+			}
 	
 	instance_destroy()
 
+}
 }

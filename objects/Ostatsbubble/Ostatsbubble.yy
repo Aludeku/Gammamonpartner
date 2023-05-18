@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Sbubbles",
+    "path": "sprites/Sbubbles/Sbubbles.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,
