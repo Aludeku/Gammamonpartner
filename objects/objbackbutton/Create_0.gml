@@ -4,7 +4,11 @@
 
 // Inherit the parent event
 event_inherited();
+image_xscale = 2
+image_yscale = 2
 
 interact = function() {
-	alarm[0] = 60;
+	room_goto(Room1)
+	
+	
 }

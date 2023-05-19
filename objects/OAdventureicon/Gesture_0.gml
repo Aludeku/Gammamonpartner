@@ -5,4 +5,5 @@ if global.some_data.hunger <= 1 || global.some_data.stamina == 0 || global.sleep
 	instance_create_depth(540,1000,-200,Otextbox)
 	alarm[0] = 90;
 }
-
+instance_destroy(Ofood)
+instance_destroy(Ofoodanimation)

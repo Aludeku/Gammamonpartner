@@ -27,8 +27,8 @@
   "properties": [],
   "overriddenProperties": [],
   "parent": {
-    "name": "Objects",
-    "path": "folders/Objects.yy",
+    "name": "Otextboxes",
+    "path": "folders/Objects/Otextboxes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Otextboxfood",

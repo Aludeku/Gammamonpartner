@@ -15,18 +15,28 @@ else if (room!= Roomstart && audio_is_playing(Filecity)) {
 	audio_stop_sound(Filecity);
 }
 
-if (room == RoomPromptbattle && !audio_is_playing(battle_found)) {
-	audio_play_sound(battle_found, 10, true);
-}
-else if (room!= RoomPromptbattle && audio_is_playing(battle_found)) {
-	audio_stop_sound(battle_found);
-}
+// Roomprompt battle and random battle
 if (room == RoomPromptbattle && !audio_is_playing(Battletheme)) {
 	audio_play_sound(Battletheme, 10, true);
 }
 else if (room!= RoomPromptbattle && room!= Roombattle && audio_is_playing(Battletheme)) {
 	audio_stop_sound(Battletheme);
 }
+if (room == Rpromptmega && !audio_is_playing(Mega_battle)) {
+	audio_play_sound(Mega_battle, 10, true);
+}
+else if (room!= Rpromptmega && room!= Roombattle && audio_is_playing(Mega_battle)) {
+	audio_stop_sound(Mega_battle);
+}
+if (room == Rpromptrookie && !audio_is_playing(Earlybattle)) {
+	audio_play_sound(Earlybattle, 10, true);
+}
+else if (room!= Rpromptrookie && room!= Roombattle && audio_is_playing(Earlybattle)) {
+	audio_stop_sound(Earlybattle);
+}
+
+
+
 
 if (room == Rvictory && !audio_is_playing(Victory_Screen)) {
     audio_play_sound(Victory_Screen, 10, false);

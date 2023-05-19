@@ -1,12 +1,14 @@
 /// @description Insert description here
 // You can write your code in this editor
 audio_play_sound(Backsound,1,false)
-instance_destroy(Oinfoagumon)
-instance_destroy(Oinfogeo)
-instance_destroy(Oinfoterrier)
-instance_destroy(Oinfoarrester)
+
+instance_destroy(Oinfoenemy)
+instance_destroy(Oenemy16)
 
 instance_destroy(Onext1)
+instance_destroy(Oevo1)
+instance_destroy(Oevo2)
+instance_destroy(Oevo3)
 
 instance_destroy(Obackbutton1)
 instance_destroy(Osettings)

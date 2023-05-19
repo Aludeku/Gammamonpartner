@@ -6,6 +6,28 @@ if room == RoomPromptbattle
 	randomise();
 	global.enemyid = irandom(5)
 }
+if room == Rpromptmega
+{
+	global.enemyid = 5
+
+}
+if room == Rpromptrookie
+{
+	rookierandom = irandom(2)
+	if rookierandom == 0
+	{
+		global.enemyid = 0
+	}
+	if rookierandom == 1
+	{
+		global.enemyid = 2
+	}
+	if rookierandom == 2
+	{
+		global.enemyid = 4
+	}
+	
+}
 if global.enemyid == 0
 {
 	sprite_index = Ssplash0 //agumon2006
@@ -42,6 +64,8 @@ if global.enemyid == 5
 	image_xscale = 3
 	image_yscale = 3
 }
+
+
 interact = function(){
   room_goto(Roombattle)
 

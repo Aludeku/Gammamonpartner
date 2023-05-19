@@ -39,3 +39,7 @@ if room == Roombattle
 	
 }
 
+if room == Rvictory || room == Rdefeat
+{
+	instance_create_depth(540,1200,-10,Oreportprompt)
+}

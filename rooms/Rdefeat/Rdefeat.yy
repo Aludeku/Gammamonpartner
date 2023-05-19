@@ -16,7 +16,6 @@
     {"instances":[
         {"properties":[],"isDnd":false,"objectId":{"name":"Odigimon","path":"objects/Odigimon/Odigimon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":512.0,"y":1952.0,"resourceVersion":"1.0","name":"inst_2FBCAD92","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Obgmusic","path":"objects/Obgmusic/Obgmusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1504.0,"y":256.0,"resourceVersion":"1.0","name":"inst_3EB6BC90","tags":[],"resourceType":"GMRInstance",},
-        {"properties":[],"isDnd":false,"objectId":{"name":"objbackbutton","path":"objects/objbackbutton/objbackbutton.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":2.48148155,"scaleY":2.4545455,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":0.0,"y":512.0,"resourceVersion":"1.0","name":"inst_272E8544","tags":[],"resourceType":"GMRInstance",},
       ],"visible":true,"depth":0,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Instances","tags":[],"resourceType":"GMRInstanceLayer",},
     {"spriteId":{"name":"Sdefeatscreen","path":"sprites/Sdefeatscreen/Sdefeatscreen.yy",},"colour":4294967295,"x":0,"y":0,"htiled":false,"vtiled":false,"hspeed":0.0,"vspeed":0.0,"stretch":false,"animationFPS":1.5,"animationSpeedType":0,"userdefinedAnimFPS":false,"visible":true,"depth":100,"userdefinedDepth":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"gridX":32,"gridY":32,"layers":[],"hierarchyFrozen":false,"effectEnabled":true,"effectType":null,"properties":[],"resourceVersion":"1.0","name":"Background","tags":[],"resourceType":"GMRBackgroundLayer",},
   ],
@@ -26,7 +25,6 @@
   "instanceCreationOrder": [
     {"name":"inst_2FBCAD92","path":"rooms/Rdefeat/Rdefeat.yy",},
     {"name":"inst_3EB6BC90","path":"rooms/Rdefeat/Rdefeat.yy",},
-    {"name":"inst_272E8544","path":"rooms/Rdefeat/Rdefeat.yy",},
   ],
   "inheritCreationOrder": false,
   "sequenceId": null,

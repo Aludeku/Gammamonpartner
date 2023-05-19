@@ -9,7 +9,7 @@ interact = function() {
 	
 	if global.some_data.hunger >= 2 && global.some_data.stamina >= 1 && global.sleep == false
 	{
-		room_goto(RoomPromptbattle)
+		room_goto(Roomselection)
 		instance_destroy(Ofood)
 		instance_destroy(Ofoodanimation)
 	}

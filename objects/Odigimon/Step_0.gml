@@ -12,11 +12,17 @@
 //	}
 //}
 //global.some_data.digimonid = global.some_data.digimonid
-
+if global.some_data.experience >=  global.some_data.maxexperience
+{
+	global.some_data.level += 1
+	global.some_data.experience = 0 
+	global.some_data.maxexperience += 25
+	
+}
 if global.some_data.digimonid == 0
 {
 	global.digimonvel = 2 
-	global.digimonhp = 6 
+	global.digimonhp = 10 
 	global.digimonatk = 1
 	global.digimontype = "virus"
 	global.digimontier = "rookie"
@@ -24,7 +30,7 @@ if global.some_data.digimonid == 0
 if global.some_data.digimonid == 1
 {
 	global.digimonvel = 4
-	global.digimonhp = 10 
+	global.digimonhp = 15 
 	global.digimonatk = 2
 	global.digimontype = "vaccine"
 	global.digimontier = "champion"
@@ -32,7 +38,7 @@ if global.some_data.digimonid == 1
 if global.some_data.digimonid == 2
 {
 	global.digimonvel = 5
-	global.digimonhp = 15 
+	global.digimonhp = 20
 	global.digimonatk = 2
 	global.digimontype = "vaccine"
 	global.digimontier = "ultimate"

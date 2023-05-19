@@ -17,6 +17,7 @@ global.some_data = {
 	stamina: 0,
 	maxstamina: 0,
 	experience: 0,
+	maxexperience: 0,
 	level: 0,
 }
 	
