@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Canoweissmon",
-    "path": "folders/Sprites/Gammamon/Canoweissmon.yy",
+    "path": "folders/Sprites/Odigimons/Canoweissmon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Scannoeating",

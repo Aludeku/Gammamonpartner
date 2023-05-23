@@ -7,7 +7,7 @@ event_inherited();
 interact = function() {
 	global.train = true
 	global.run = false
-	global.sleep = false
+	global.some_data.sleep = false
 	global.walk = false
 	
 	if global.some_data.digimonid <= 0

@@ -9,7 +9,7 @@ if global.some_data.hunger < 4
 	image_index = 0
 }
 // for sleep:
-if global.sleep = true
+if global.some_data.sleep = true
 {
 	image_index = 1
 }

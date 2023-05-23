@@ -3,7 +3,7 @@
 global.train = false
 global.walk = false
 global.run = false
-global.sleep = false
+global.some_data.sleep = false
 if global.some_data.digimonid >= 2
 {
 	global.some_data.digimonid -= 1

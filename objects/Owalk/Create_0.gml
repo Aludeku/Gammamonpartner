@@ -13,7 +13,7 @@ interact = function() {
 	if global.walk == true
 	{
 		global.run = false
-		global.sleep = false
+		global.some_data.sleep = false
 		global.train = false
 	}
 	if global.some_data.digimonid <= 0

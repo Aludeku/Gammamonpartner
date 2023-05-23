@@ -8,7 +8,7 @@ if global.some_data.hunger >= 2 && global.some_data.stamina >= 1
 {
 	image_index = 0
 }
-if global.sleep == true 
+if global.some_data.sleep == true 
 {
 	image_index = 1
 }

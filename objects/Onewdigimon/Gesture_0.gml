@@ -5,9 +5,11 @@ if sprite_index == Sgammamon16
 	global.some_data.digimonid = 0
 	room_goto(Room1)
 }
-if sprite_index == Sguilmon16
+
+else if sprite_index == Sagumon16
 {
-	global.some_data.digimonid = 0
+	global.some_data.digimonid = 6
+	room_goto(Room1)
 	
 }
 

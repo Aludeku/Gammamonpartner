@@ -19,17 +19,22 @@ global.some_data = {
 	experience: 0,
 	maxexperience: 0,
 	level: 0,
+	sleep: false,
+	storedDate : date_current_datetime(),
+	happiness: 0,
+	discipline: 0,
+	poop: 0,
 }
 	
 global.walk = false;
-global.sleep = false;
+global.some_data.sleep = false;
 global.information = false
 global.Evolutionprocess = false
 global.enemyid = irandom_range(0,1)
 global.some_data.digimonid = 0;
 
 
-//if (global.some_data.digimonid == 0) && (global.run == false) && (global.walk == false) && (global.sleep == false) {		
+//if (global.some_data.digimonid == 0) && (global.run == false) && (global.walk == false) && (global.some_data.sleep == false) {		
 //		Odigimon.sprite_index = Srealgamma;
 //} 
 //	else 

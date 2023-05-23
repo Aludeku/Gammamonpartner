@@ -8,7 +8,7 @@ event_inherited();
 interact = function() {
 	global.walk = false
 	
-	instance_create_depth(671,544,1,Owalk)
+	instance_create_depth(671,544,1,Oclean)
 	instance_destroy()
 }
 

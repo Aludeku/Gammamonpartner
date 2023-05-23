@@ -1,0 +1,1 @@
+#define android_extension_send_notification(msg)

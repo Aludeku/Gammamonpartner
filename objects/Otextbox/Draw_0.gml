@@ -13,10 +13,15 @@ else if global.some_data.stamina == 0
 	Otextbox.sprite_index = Stextbox
 	draw_text(100, 980, string("Your digimon is Tired."))
 }
-else if global.sleep == true
+else if global.some_data.sleep == true
 {
 	Otextbox.sprite_index = Stextboxbigger
 	draw_text_ext(83,910,string("Your digimon is Sleeping, wake him up before."),100,980)
+}
+else if global.digimontier == "baby I"
+{
+	Otextbox.sprite_index = Stextboxbigger
+	draw_text_ext(83,910,string("Your digimon isn't ready to fight."),100,980)
 }
 if room == Roomselection || room == Radventuremode
 {

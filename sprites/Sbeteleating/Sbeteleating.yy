@@ -74,7 +74,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Betelgammamon",
-    "path": "folders/Sprites/Gammamon/Betelgammamon.yy",
+    "path": "folders/Sprites/Odigimons/Betelgammamon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sbeteleating",

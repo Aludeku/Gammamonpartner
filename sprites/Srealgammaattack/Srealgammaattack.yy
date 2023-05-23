@@ -70,7 +70,7 @@
   "nineSlice": null,
   "parent": {
     "name": "Gammamon",
-    "path": "folders/Sprites/Gammamon.yy",
+    "path": "folders/Sprites/Odigimons/Gammamon.yy",
   },
   "resourceVersion": "1.0",
   "name": "Srealgammaattack",

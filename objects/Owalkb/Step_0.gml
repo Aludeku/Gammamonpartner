@@ -3,5 +3,5 @@
 if global.walk == false
 {
 	instance_destroy()
-	instance_create_depth(671,544,1,Owalk)
+	instance_create_depth(671,544,1,Oclean)
 }

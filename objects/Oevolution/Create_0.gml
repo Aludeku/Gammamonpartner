@@ -11,7 +11,7 @@ interact = function(){
 	global.train = false
 	global.walk = false
 	global.run = false
-	global.sleep = false
+	global.some_data.sleep = false
 	if global.some_data.digimonid == 0
 	{
 		Odigimon.sprite_index = Sevogammabetel

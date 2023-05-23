@@ -9,7 +9,7 @@ interact = function() {
 	global.run = true
 	if global.run == true
 	{
-		global.sleep = false
+		global.some_data.sleep = false
 		global.train = false
 		global.walk = false
 	}

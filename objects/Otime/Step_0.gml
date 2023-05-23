@@ -13,3 +13,8 @@ if played_hours < 10 played_hours = "0" + string(played_hours) else played_hours
 myminute = date_get_minute(date_current_datetime())
 global.some_data.timerevolution = myminute
 
+// ChatGPT help:
+global.timer += delta_time;
+var timeInSeconds = global.timer / 1000000; // Convert microseconds to seconds
+
+

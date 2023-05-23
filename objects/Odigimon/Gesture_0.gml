@@ -1,24 +1,12 @@
  /// @description Insert description here
 // You can write your code in this editor
-if (global.information == false) && (room != Roombattle) && (room != Rdefeat) && (room != Rvictory) && (global.Evolutionprocess == false)
+if (global.information == false) && room == Room1 && global.tap == false
 {
+	alarm[0] = 1420;
 	global.tap = true
-	alarm[0] = 120;
-	if global.some_data.digimonid == 0
-	{
-		audio_play_sound(SaikyoGamma,1,false)
-		sprite_index = Srealgammahappy
-	}
-	if global.some_data.digimonid == 1
-	{
-		audio_play_sound(SaikyoCanno,1,false)
-		sprite_index = Sbetelhappy
-	}
-	if global.some_data.digimonid == 2
-	{
-		audio_play_sound(SaikyoCanno,1,false)
-		sprite_index = Scannohappy
-	}
+	audio_play_sound(Betterbeep,1,false)
+	instance_create_depth(224,1216,-10,Opraise)
+	instance_create_depth(864,1216,-10,Oscold)
 }
 if room == Roombattle
 {
@@ -42,4 +30,9 @@ if room == Roombattle
 if room == Rvictory || room == Rdefeat
 {
 	instance_create_depth(540,1200,-10,Oreportprompt)
+}
+if global.some_data.digimonid == 6
+{
+	sprite_index = Shatchingdigiegg
+	alarm[2] = 60;
 }

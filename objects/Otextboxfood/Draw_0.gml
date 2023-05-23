@@ -9,7 +9,7 @@ if global.some_data.hunger == 4
 	draw_text(140, 980, string("Your digimon is Full."))
 }
 
-else if global.sleep == true
+else if global.some_data.sleep == true
 {
 	sprite_index = Stextboxbigger
 	draw_text_ext(83,910,string("Your digimon is Sleeping, wake him up before."),100,980)

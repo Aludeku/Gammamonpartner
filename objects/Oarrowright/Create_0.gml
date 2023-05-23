@@ -6,6 +6,10 @@ event_inherited();
 interact = function() {
 	if Onewdigimon.sprite_index == Sgammamon16
 	{
+		Onewdigimon.sprite_index = Sagumon16
+	}
+	else if Onewdigimon.sprite_index == Sagumon16
+	{
 		Onewdigimon.sprite_index = Sguilmon16
 	}
 	else if Onewdigimon.sprite_index == Sguilmon16
