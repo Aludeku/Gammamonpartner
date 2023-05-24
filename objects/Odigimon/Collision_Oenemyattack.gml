@@ -12,6 +12,12 @@ if global.some_data.digimonid == 1
 	alarm[1] = 30;
 
 }
+if global.some_data.digimonid == 5
+{
+	sprite_index = Sgulussleep
+	alarm[1] = 30;
+
+}
 if global.some_data.digimonid == 2
 {
 	sprite_index = Scannosleep

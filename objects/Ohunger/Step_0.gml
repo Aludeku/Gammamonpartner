@@ -15,4 +15,9 @@ if global.some_data.hunger > 4
 //{
 //	global.some_data.hunger -= (hungerIncreaseRate * delta_time);
 //}
-
+	
+if global.some_data.hunger == 0
+{
+	//lower happiness and discipline
+	alarm[1] = 4800;
+}

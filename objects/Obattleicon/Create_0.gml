@@ -10,6 +10,7 @@ interact = function() {
 	if global.some_data.hunger >= 2 && global.some_data.stamina >= 1 && global.some_data.sleep == false 
 	&& global.digimontier != "baby I"
 	{
+		instance_destroy(Odigimon)
 		room_goto(Roomselection)
 		instance_destroy(Ofood)
 		instance_destroy(Ofoodanimation)

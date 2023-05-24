@@ -20,8 +20,14 @@ if Ohealthbar.hp_current <= 0
 	{
 		global.some_data.experience -= 5
 	}
-	global.some_data.happiness -= 20
-	global.some_data.discipline -= 10
+	if global.some_data.happiness >= 20
+	{
+		global.some_data.happiness -= 5
+	}
+	if global.some_data.discipline >= 10
+	{
+		global.some_data.discipline -= 5
+	}
 	room_goto(Rdefeat)
 				
 }
@@ -45,8 +51,14 @@ if Oenemyhealth.hp_current <= 0
 	{
 		global.some_data.experience += 125
 	}	
-	global.some_data.happiness += 10
-	global.some_data.discipline -= 5
+	if global.some_data.happiness <= 80
+	{
+		global.some_data.happiness += 5
+	}
+	if global.some_data.discipline <= 90
+	{
+		global.some_data.discipline += 5
+	}
 	
 	room_goto(Rvictory)
 }

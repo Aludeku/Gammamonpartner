@@ -4,13 +4,13 @@ if scold == false
 {
 	audio_play_sound(SCOLD,1,false)
 	scold = true
-	if global.some_data.discipline < 96
+	if global.some_data.discipline < 80
 	{
-		global.some_data.discipline += 5
+		global.some_data.discipline += 20
 	}
-	if global.some_data.happiness > 5
+	if global.some_data.happiness > 15
 	{
-		global.some_data.happiness -= 5
+		global.some_data.happiness -= 15
 	}
 	global.some_data.sleep = true
 	alarm[0] = 90;

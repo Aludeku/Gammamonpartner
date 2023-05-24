@@ -4,6 +4,18 @@ randomize()
 global.x16 = Oinfo16sprite.x
 global.y16 = Oinfo16sprite.y
 
+if global.some_data.digimonid == -2
+{
+	image_xscale = 10
+	image_yscale = 10
+	sprite_index = Scurimon
+}
+if global.some_data.digimonid == -1
+{
+	image_xscale = 10
+	image_yscale = 10
+	sprite_index = Sgurimon
+}
 if global.some_data.digimonid == 0
 {
 	sprite_index = Sgammamon16
@@ -11,6 +23,10 @@ if global.some_data.digimonid == 0
 if global.some_data.digimonid == 1
 {
 	sprite_index = Sbetelgammamon16
+}
+if global.some_data.digimonid == 5
+{
+	sprite_index = Sgulusgammamon16
 }
 if global.some_data.digimonid == 2
 {

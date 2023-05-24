@@ -7,32 +7,17 @@ if sprite_index == Sinfotemplate
 	{
 		instance_create_depth(280,1100,-300,Oinfo16sprite)
 	}
-	draw_set_font(Font_a1)
-	if global.some_data.digimonid == 0
-	{
-		
-		draw_set_color(c_purple)
-		draw_text(100,790,"Gammamon")
-	}
 	draw_set_font(Font_a0)
-	if global.some_data.digimonid == 1
-	{
-		draw_set_color(c_red)
-		draw_text(100,790,"Betelgammamon")
-	}
-	if global.some_data.digimonid == 2
-	{
-		draw_set_color(c_red)
-		draw_text(100,790,"Canoweissmon")
-	}
+	draw_set_color(c_purple)
+	draw_text(100,790,string(global.digimonname))
 	draw_set_color(c_red)
 	draw_set_font(Fontpixel)
 	draw_text(470,1000,"Level = "+ string(global.some_data.level));
 	draw_set_color(c_black)
-	draw_text(470,1080,"Age = " + string(global.some_data.age));
+	draw_text(470,1080,"Battles = " + string(global.some_data.battles));
 	draw_text(460 ,1160,"Type = "+ string(global.digimontype));
-		draw_set_font(Font_a0)
-		draw_text(340,1300,string(global.digimontier));
+	draw_set_font(Font_a0)
+	draw_text(340,1300,string(global.digimontier));
 	draw_set_font(Fontpixel)
 	draw_set_color(c_purple)
 	draw_set_font(Fontpixel)
@@ -75,7 +60,6 @@ if sprite_index == Sdetails
 
 		draw_healthbar(x1,y1,x2,y2, amount, c_black, c_purple, c_purple, 0, true, true);
 		//draw_sprite(slifebar,0,800,770)
-
 		instance_destroy(Oinfo16sprite)
 }
 

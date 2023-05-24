@@ -19,6 +19,16 @@ if sprite_index == Sevolutiontreetemplate
 		}
 		
 	}
+	if  global.some_data.digimonid == 5
+	{
+		if !instance_exists(Oevo1){
+			instance_create_depth(530,1175,-210,Oevo1)
+		}
+		if !instance_exists(Oevo5){
+			instance_create_depth(750,1435,-210,Oevo5)
+		}
+		
+	}
 	if  global.some_data.digimonid == 2
 	{
 		if !instance_exists(Oevo1){
@@ -44,8 +54,13 @@ if sprite_index != Sevolutiontreetemplate || !instance_exists(Oinfo1)
 	{
 		instance_destroy(Oevo2)
 	}
+	if instance_exists(Oevo5)
+	{
+		instance_destroy(Oevo5)
+	}
 	if instance_exists(Oevo3)
 	{
 		instance_destroy(Oevo3)
 	}
 }
+

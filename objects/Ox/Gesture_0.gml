@@ -8,6 +8,7 @@ instance_destroy(Oenemy16)
 instance_destroy(Onext1)
 instance_destroy(Oevo1)
 instance_destroy(Oevo2)
+instance_destroy(Oevo5)
 instance_destroy(Oevo3)
 
 instance_destroy(Obackbutton1)

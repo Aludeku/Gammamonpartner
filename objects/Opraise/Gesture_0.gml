@@ -8,9 +8,9 @@ if praise == false
 	{
 		global.some_data.happiness += 5
 	}
-	if global.some_data.discipline >= 3
+	if global.some_data.discipline >= 2
 	{
-		global.some_data.discipline -= 3
+		global.some_data.discipline -= 2
 	}
 	global.celebration = true
 	alarm[0] = 90;

@@ -2,7 +2,7 @@
 // You can write your code in this editor
 if sprite_index == Sgammamon16
 {
-	global.some_data.digimonid = 0
+	global.some_data.digimonid = -3
 	room_goto(Room1)
 }
 

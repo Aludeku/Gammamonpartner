@@ -33,6 +33,15 @@ interact = function() {
 				Oattack.sprite_index = atk_s_16
 			}
 			}
+			if global.some_data.digimonid == 5
+			{	
+				Odigimon.sprite_index = Sgulusatk
+				if !instance_exists(Oattack)
+			{
+				instance_create_depth(400,1700,-10,Oattack)
+				Oattack.sprite_index = atk_s_11
+			}
+			}
 			if global.some_data.digimonid == 2
 			{	
 				Odigimon.sprite_index = Scannoattack
