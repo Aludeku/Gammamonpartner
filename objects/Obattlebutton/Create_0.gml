@@ -15,7 +15,13 @@ interact = function() {
 	
 	if ((global.digimonvel+global.rookievelbonus) >= (global.enemyvel+global.enemyvelbonus))
 		{
+			
+				if !instance_exists(Oattack)
+				{
+					instance_create_depth(400,1700,-10,Oattack)
+				}
 			global.digimonattack = true
+			
 			if global.some_data.digimonid == 0
 			{
 				Odigimon.sprite_index = Srealgammaattack
@@ -46,14 +52,27 @@ interact = function() {
 			{	
 				Odigimon.sprite_index = Scannoattack
 				if !instance_exists(Oattack)
-			{
+				{
 				instance_create_depth(400,1700,-10,Oattack)
 				Oattack.sprite_index = atk_l_17
+				}			
 			}
+			if global.some_data.digimonid == 6
+			{		
+				Oattack.sprite_index = atk_l_16
+			}
+			if global.some_data.digimonid == 7
+			{		
+				Oattack.sprite_index = atk_l_16
+			}
+			if global.some_data.digimonid == 8
+			{		
+				Oattack.sprite_index = atk_l_05
 			}
 			
+			
 					
-		}
+}
 	if ((global.enemyvel+global.enemyvelbonus) >= (global.digimonvel+global.rookievelbonus))
 		{	
 			global.enemyattack = true

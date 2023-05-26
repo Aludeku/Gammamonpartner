@@ -24,6 +24,10 @@ global.some_data = {
 	happiness: 0,
 	discipline: 0,
 	poop: 0,
+	atktrain: 0,
+	veltrain: 0,
+	hptrain: 0,
+
 }
 	
 global.walk = false;

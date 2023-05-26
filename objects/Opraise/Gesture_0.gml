@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-if praise == false
+if global.praise == false
 {
 	audio_play_sound(PRAISE,1,false)
-	praise = true
+	global.praise = true
 	if global.some_data.happiness < 100
 	{
 		global.some_data.happiness += 5

@@ -39,4 +39,12 @@ if room == Roomselection || room == Radventuremode
 	draw_text(544,236,"Select Mode")
 	
 }
+if room == Rtrainingselection
+{
+	image_index = 1
+	draw_set_font(Font_a1)
+	draw_set_halign(fa_middle)
+	draw_text(544,236,"Select Trainning")
+	
+}
 

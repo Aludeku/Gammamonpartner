@@ -3,7 +3,7 @@
 
 // Inherit the parent event
 //event_inherited();
-if room == RoomPromptbattle
+if room == RoomPromptbattle || room == Rpromptmega || room == Rpromptrookie
 {
 	draw_self()
 }

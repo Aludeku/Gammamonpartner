@@ -21,9 +21,9 @@ if sprite_index == Sinfotemplate
 	draw_set_font(Fontpixel)
 	draw_set_color(c_purple)
 	draw_set_font(Fontpixel)
-	draw_text(400,1500,"ATK = " + string(global.digimonatk));
-	draw_text(400,1640,"HP  = " + string(global.digimonhp));
-	draw_text(400,1780,"VEL = " + string(global.digimonvel));
+	draw_text(300,1500,"ATK = " + string(global.digimonatk) + " + (" + string(global.some_data.atktrain) + ")");
+	draw_text(300,1640,"HP  = " + string(global.digimonhp) + " + (" + string(global.some_data.hptrain) + ")");
+	draw_text(300,1780,"VEL = " + string(global.digimonvel) + " + (" + string(global.some_data.veltrain) + ")");
 }
 if sprite_index == Sdetails
 {

@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "Sbgpreview125",
-    "path": "sprites/Sbgpreview125/Sbgpreview125.yy",
+    "name": "Sbgpreview129",
+    "path": "sprites/Sbgpreview129/Sbgpreview129.yy",
   },
   "solid": false,
   "visible": true,

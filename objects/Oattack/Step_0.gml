@@ -3,5 +3,5 @@
 if global.digimonattack == true
 	if instance_exists(Oenemy)
 		{
-		move_towards_point(Oenemy.x, Oenemy.y, 9);
+			move_towards_point(Oenemy.x, Oenemy.y, 9);
 		}

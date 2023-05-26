@@ -4,7 +4,7 @@ if global.some_data.sleep == true
 {
 	image_index = 1
 }
-if global.some_data.sleep == false && !instance_exists(Opunch)
+if global.some_data.sleep == false
 {
 	image_index = 0
 }

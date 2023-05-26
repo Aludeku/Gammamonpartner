@@ -66,9 +66,9 @@ if global.enemyid == 5 //Omnimon
 	global.enemyname = "Omnimon"
 	global.enemytype = "Vaccine"
 	global.enemytier = "Mega+"
-	global.enemyvel = 5 //+ irandom_range(0,3)
+	global.enemyvel = 6 //+ irandom_range(0,3)
 	global.enemyhp = 30
-	global.enemyatk = 2 + irandom_range(0,1)
+	global.enemyatk = 3 + irandom_range(0,1)
 	
 }
 

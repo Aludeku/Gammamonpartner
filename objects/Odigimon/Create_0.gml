@@ -11,6 +11,7 @@
 
  //   global.res_width = global.res_height * _display_ratio;
 //}
+global.egghatching = false
 global.eating = false
 global.tap = false
 global.train = false
@@ -18,10 +19,12 @@ global.run = false
 //global.some_data.sleep = false
 global.walk = false
 global.Evolutionprocess = false
+global.evolutionscene = false
 global.digimonattack = false
 global.damage = false
 global.celebration = false
-
+image_xscale = 15
+image_yscale = 15
 //poop
 if global.some_data.hunger >= 4 && room == Room1
 {
@@ -38,6 +41,7 @@ if global.some_data.sleep == false
 {
 	if global.some_data.digimonid == -3
 	{
+
 		sprite_index = Sdigieggstill
 		global.digimonvel = 0 
 		global.digimonhp = 0 //1000
@@ -48,6 +52,7 @@ if global.some_data.sleep == false
 	}
 	if global.some_data.digimonid == -2
 	{
+
 		sprite_index = Scurimon
 		global.digimonvel = 0 
 		global.digimonhp = 0 //1000
@@ -59,6 +64,7 @@ if global.some_data.sleep == false
 	}
 	if global.some_data.digimonid == -1
 	{
+
 		sprite_index = Sgurimon
 		global.digimonvel = 2 
 		global.digimonhp = 5 //1000
@@ -71,8 +77,7 @@ if global.some_data.sleep == false
 	}
 	if global.some_data.digimonid == 0
 	{
-		image_xscale = 15
-		image_yscale = 15
+
 		sprite_index = Srealgamma
 		global.digimonvel = 3 
 		global.digimonhp = 10 //1000
@@ -83,8 +88,6 @@ if global.some_data.sleep == false
 	}
 	if global.some_data.digimonid == 1
 	{
-		image_xscale = 15
-		image_yscale = 15
 		sprite_index = Sbetel
 		global.digimonvel = 4
 		global.digimonhp = 15 //1500
@@ -94,9 +97,7 @@ if global.some_data.sleep == false
 		global.digimonname = "Betelgammamon"
 	}
 	if global.some_data.digimonid == 5
-	{
-		image_xscale = 15
-		image_yscale = 15
+{
 		sprite_index = Sgulus
 		global.digimonvel = 4
 		global.digimonhp = 15 //1500
@@ -106,8 +107,7 @@ if global.some_data.sleep == false
 		global.digimonname = "Gulusgammamon"
 	}
 	if global.some_data.digimonid == 2 {
-		image_xscale = 15
-		image_yscale = 15
+
 		sprite_index = Scanno
 		global.digimonvel = 5
 		global.digimonhp = 20 //1500
@@ -115,5 +115,55 @@ if global.some_data.sleep == false
 		global.digimontype = "vaccine"
 		global.digimontier = "Ultimate"
 		global.digimonname = "Cannoweissmon"
+	}
+	if global.some_data.digimonid == 6 {
+
+		sprite_index = Sregulus
+		global.digimonvel = 5
+		global.digimonhp = 20 //1500
+		global.digimonatk = 2  //irandom_range(200,300)
+		global.digimontype = "virus"
+		global.digimontier = "Ultimate"
+		global.digimonname = "Regulusmon"
+	}
+	if global.some_data.digimonid == 7 {
+
+		sprite_index = Ssirius
+		global.digimonvel = 5
+		global.digimonhp = 30 //1500
+		global.digimonatk = 3  //irandom_range(200,300)
+		global.digimontype = "vaccine"
+		global.digimontier = "Mega"
+		global.digimonname = "Siriusmon"
+	}
+	if global.some_data.digimonid == 8 {
+
+		sprite_index = Sarcturusmon
+		global.digimonvel = 5
+		global.digimonhp = 30 //1500
+		global.digimonatk = 3  //irandom_range(200,300)
+		global.digimontype = "virus"
+		global.digimontier = "Mega"
+		global.digimonname = "Arcturusmon"
+	}
+		if global.some_data.digimonid == 9
+	{
+		sprite_index = Skaus
+		global.digimonvel = 5
+		global.digimonhp = 14 //1500
+		global.digimonatk = 2  //irandom_range(200,300)
+		global.digimontype = "Data"
+		global.digimontier = "champion"
+		global.digimonname = "Kausgammamon"
+	}
+	if global.some_data.digimonid == 10
+	{
+		sprite_index = Swezen
+		global.digimonvel = 3
+		global.digimonhp = 20 //1500
+		global.digimonatk = 2  //irandom_range(200,300)
+		global.digimontype = "Data"
+		global.digimontier = "champion"
+		global.digimonname = "Wezengammamon"
 	}
 }

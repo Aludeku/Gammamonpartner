@@ -13,4 +13,8 @@ global.some_data.hunger = 0
 global.some_data.maxhunger = 4
 global.some_data.happiness = 10
 global.some_data.discipline = 10
+global.some_data.atktrain = 0
+global.some_data.hptrain = 0
+global.some_data.veltrain = 0
+
 

@@ -32,6 +32,29 @@ if global.some_data.digimonid == 2
 {
 	sprite_index = Scanoweissmon16
 }
+if global.some_data.digimonid == 6
+{
+	sprite_index = Sregulusmon16
+}
+if global.some_data.digimonid == 7
+{
+	sprite_index = Ssiriusmon16
+}
+if global.some_data.digimonid == 8
+{
+	sprite_index = Sarcturusmon16
+}
+if global.some_data.digimonid == 9
+{
+	sprite_index = Skausgammamon16
+}
+if global.some_data.digimonid == 10
+{
+	sprite_index = Swezengammamon16
+}
+
+
+
 if room == Rdigifarm && direc >= 5 
 {
 	image_xscale = -21

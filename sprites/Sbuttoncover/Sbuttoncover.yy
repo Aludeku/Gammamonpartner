@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 1079,
+  "bbox_right": 32,
   "bbox_top": 0,
-  "bbox_bottom": 708,
+  "bbox_bottom": 21,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 1080,
-  "height": 709,
+  "width": 33,
+  "height": 22,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"f4c19826-686d-4d2e-b525-f6c8c6755534","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"f4c19826-686d-4d2e-b525-f6c8c6755534","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"LayerId":{"name":"dc7a7f42-2ab1-44ae-943f-fca40b52717e","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sbuttoncover","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"resourceVersion":"1.0","name":"f4c19826-686d-4d2e-b525-f6c8c6755534","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"f79383af-25bf-4829-9a7f-18f3d2c06449","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"f79383af-25bf-4829-9a7f-18f3d2c06449","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"LayerId":{"name":"8efce884-f3e5-4b9d-961f-64a0799b8ef8","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Sbuttoncover","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"resourceVersion":"1.0","name":"f79383af-25bf-4829-9a7f-18f3d2c06449","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Sbuttoncover","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"29eb5bd1-6ba4-4217-887d-97907817b9a7","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f4c19826-686d-4d2e-b525-f6c8c6755534","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"87d0f48b-58b0-47af-8602-25b412261df3","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"f79383af-25bf-4829-9a7f-18f3d2c06449","path":"sprites/Sbuttoncover/Sbuttoncover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"dc7a7f42-2ab1-44ae-943f-fca40b52717e","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"8efce884-f3e5-4b9d-961f-64a0799b8ef8","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {
