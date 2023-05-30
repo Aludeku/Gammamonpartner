@@ -54,7 +54,7 @@
     "playbackSpeedType": 0,
     "autoRecord": true,
     "volume": 1.0,
-    "length": 10.0,
+    "length": 11.0,
     "events": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MessageEventKeyframe>",},
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
@@ -65,7 +65,7 @@
             {"id":"1accc4cb-eac4-451d-bacd-91f59e43026c","Key":3.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"25ece77e-5411-4bb5-b1a1-53dd375347f8","path":"sprites/Somnimonenemyatksword/Somnimonenemyatksword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"180d8f92-e0c3-436b-8ded-ac4fc2bf27ce","Key":4.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"74eabfe0-36d0-406b-8cda-bbb128a497a7","path":"sprites/Somnimonenemyatksword/Somnimonenemyatksword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
             {"id":"3bd61cab-f969-45aa-90f1-30a2c1d40924","Key":5.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"d338636d-4b98-493c-87ec-7e460fd6eed2","path":"sprites/Somnimonenemyatksword/Somnimonenemyatksword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
-            {"id":"1fcdbe5d-f7c9-4cb6-ab7b-43f5e840f5e3","Key":6.0,"Length":4.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b1dabd1-8579-4c10-8110-be53ba4b54d6","path":"sprites/Somnimonenemyatksword/Somnimonenemyatksword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"1fcdbe5d-f7c9-4cb6-ab7b-43f5e840f5e3","Key":6.0,"Length":5.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"5b1dabd1-8579-4c10-8110-be53ba4b54d6","path":"sprites/Somnimonenemyatksword/Somnimonenemyatksword.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,

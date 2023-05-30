@@ -3,12 +3,13 @@
 
 
 // Inherit the parent event
+image_xscale = 2.5
+image_yscale = 2.5
 event_inherited();
 
 interact = function() {
 	if global.some_data.hunger >= 2 && global.some_data.stamina >= 1 && global.some_data.sleep == false
 	{
-		global.some_data.hunger -= 1
 		instance_destroy(Odigimon)
 		room_goto(Radventuremode)
 	}

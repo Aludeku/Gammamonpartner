@@ -14,5 +14,5 @@ if global.scold == false
 	}
 	global.some_data.sleep = true
 	instance_destroy(Opraise)
-alarm[0] = 90;
+	alarm[0] = 90;
 	}

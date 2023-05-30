@@ -16,28 +16,21 @@ if global.some_data.hunger > 4
 //	global.some_data.hunger -= (hungerIncreaseRate * delta_time);
 //}
 	
-if global.some_data.hunger == 0
+if global.some_data.hunger <= 2
 {
+	alarm[1] = 1250;
 	//lower happiness and discipline
-	alarm[1] = 4800;
-	if global.digimontier != "Egg"
-		if !instance_exists(Ofloatingthought)
-		{
-			instance_create_depth(500,1100,2,Ofloatingthought)
-		}
-		if !instance_exists(Ofloatingwish)
-		{
-			instance_create_depth(500,1080,1,Ofloatingwish)
-		}
+	if !instance_exists(Ofloatingfood)
+	{
+		instance_create_depth(500,1100,2,Ofloatingfood)
+	}
 }
-if global.some_data.hunger >= 1
+
+
+if global.some_data.hunger > 2
 {
-	if instance_exists(Ofloatingthought)
+	if instance_exists(Ofloatingfood)
 		{
-			instance_destroy(Ofloatingthought)
-		}
-		if instance_exists(Ofloatingwish)
-		{
-			instance_destroy(Ofloatingwish)
+			instance_destroy(Ofloatingfood)
 		}
 }

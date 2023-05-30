@@ -52,8 +52,63 @@ if global.some_data.digimonid == 10
 {
 	sprite_index = Swezengammamon16
 }
+if global.some_data.digimonid == 11
+{
+	image_xscale = 10
+	image_yscale = 10
+	sprite_index = Sdigieggstill
+}
+if global.some_data.digimonid == 12
+{
+	sprite_index = Sbotamon16
+}
+if global.some_data.digimonid == 13
+{
+	sprite_index = Skoromon16
+}
+if global.some_data.digimonid == 14
+{
+	sprite_index = Sagumon16
+}
+if global.some_data.digimonid == 15
+{
+	sprite_index = Sgreymon16
+}
+if global.some_data.digimonid == 16
+{
+	sprite_index = Smetalgreymon16
+}
+if global.some_data.digimonid == 17
+{
+	sprite_index = Swargreymon16
+}
 
+if global.some_data.digimonid == 18
+{
+	sprite_index = Sgreymonblue16
+}
+if global.some_data.digimonid == 19
+{
+	sprite_index = Smetalgreymonvirus16
+}
+if global.some_data.digimonid == 20
+{
+	sprite_index = Sskullgreymon16
+}
 
+if global.some_data.digimonid == 21
+{
+	sprite_index = Sblackwargreymon16
+}
+if global.some_data.digimonid == 22
+{
+	sprite_index = Styrannomon16
+}
+
+if global.some_data.digimonid == 23
+{
+	sprite_index = Sextyranomon16
+}
 
 if room == Rdigifarm && direc >= 5 
 {

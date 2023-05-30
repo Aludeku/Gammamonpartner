@@ -3,6 +3,8 @@
 
 
 // Inherit the parent event
+image_xscale = 2.5
+image_yscale = 2.5
 event_inherited();
 
 interact = function() {
@@ -11,7 +13,7 @@ interact = function() {
 		instance_create_depth(900,1900,-20,Obroom)
 		instance_destroy(Opoop)
 		if global.some_data.poop >= 1
-		{		
+		{
 			global.some_data.poop -= 1
 			global.some_data.discipline += 10
 		}

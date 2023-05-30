@@ -8,14 +8,14 @@
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 213,
+  "bbox_right": 96,
   "bbox_top": 0,
-  "bbox_bottom": 213,
+  "bbox_bottom": 96,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 214,
-  "height": 214,
+  "width": 97,
+  "height": 97,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"b7b7daf9-43f1-45bf-b578-1b5d75f3f39f","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"b7b7daf9-43f1-45bf-b578-1b5d75f3f39f","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"LayerId":{"name":"c3686fa7-ffad-4353-9dcd-ceaffd737b7c","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Sbattleiconhover","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"resourceVersion":"1.0","name":"b7b7daf9-43f1-45bf-b578-1b5d75f3f39f","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"0829ce82-b112-4ce6-8bb4-f362b2312be4","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"0829ce82-b112-4ce6-8bb4-f362b2312be4","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"LayerId":{"name":"12a6c355-ee90-4196-ae6a-8a988df4beef","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Sbattleiconhover","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"resourceVersion":"1.0","name":"0829ce82-b112-4ce6-8bb4-f362b2312be4","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Sbattleiconhover","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"1185393b-7514-46c2-99fc-2a1ac5c73241","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"b7b7daf9-43f1-45bf-b578-1b5d75f3f39f","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"5d2c2092-3b97-4a14-a952-29ef9b062d23","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"0829ce82-b112-4ce6-8bb4-f362b2312be4","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 107,
-    "yorigin": 107,
+    "xorigin": 48,
+    "yorigin": 48,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Sbattleiconhover","path":"sprites/Sbattleiconhover/Sbattleiconhover.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"c3686fa7-ffad-4353-9dcd-ceaffd737b7c","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"12a6c355-ee90-4196-ae6a-8a988df4beef","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

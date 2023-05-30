@@ -3,18 +3,14 @@
 
 
 // Inherit the parent event
+image_xscale = 2.5
+image_yscale = 2.5
 event_inherited();
 
 interact = function() {
 	global.some_data.sleep = false
-	if global.some_data.digimonid <= 0
-	{
-		Odigimon.sprite_index = Srealgamma
-	}
-	if global.some_data.digimonid == 2
-	{
-		Odigimon.sprite_index = Scanno
-	}
+	global.run = false
+	global.walk = false
 	instance_destroy()
 	instance_create_depth(928,544,1,Osleep)
 }

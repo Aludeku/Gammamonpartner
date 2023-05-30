@@ -8,6 +8,11 @@ if global.some_data.hunger <= 1
 	Otextbox.sprite_index = Stextbox
 	draw_text(100, 980, string("Your digimon is hungry."))
 }
+else if global.digimontier == "Baby I" || global.digimontier == "Baby II"
+{
+	Otextbox.sprite_index = Stextbox
+	draw_text(90, 980, string("Your digimon can't fight yet."))
+}
 else if global.some_data.stamina == 0
 {
 	Otextbox.sprite_index = Stextbox

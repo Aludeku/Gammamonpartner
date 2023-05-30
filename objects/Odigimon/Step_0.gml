@@ -1,5 +1,11 @@
  /// @description level evolution
 // You can write your code in this editor
+randomize()
+global.some_data.storedDate = date_current_datetime();
+
+var currentDate = date_current_datetime();
+ /// @description level evolution
+// You can write your code in this editor
 global.some_data.storedDate = date_current_datetime();
 
 var currentDate = date_current_datetime();
@@ -9,54 +15,26 @@ var daysPassed = timeDifference / (1000000 * 60 * 60 * 24);
 var yearsPassed = floor(daysPassed / 365);
 
 //evolution
-	
-if global.some_data.digimonid == 0 && global.some_data.level >= 2 
-&& room == Room1
-{
+
+//if global.Evolutionprocess == true && global.evolutionscene == false
+//{
+if global.digimontier == "rookie" && global.some_data.level >= 2 && room == Room1 && global.tap == false
+|| global.digimontier == "champion" && global.some_data.level >= 4 && room == Room1 && global.tap == false 
+|| global.digimontier == "Ultimate" && global.some_data.level >= 6 && room == Room1 && global.tap == false
+ {
 	global.Evolutionprocess = true
-	if !instance_exists(Ofloatingthought)
-	{
-		instance_create_depth(500,1200,2,Ofloatingthought)
-	}
 	if !instance_exists(Ofloatingevo)
 	{
 		instance_create_depth(500,1180,1,Ofloatingevo)
+		instance_create_depth(960,1664,1,Oevobutton)
 	}
 }
-if global.some_data.digimonid == 1 && global.some_data.level >= 4
- && room == Room1 ||
- global.some_data.digimonid == 5 && global.some_data.level >= 4
- && room == Room1 ||
- global.some_data.digimonid == 9 && global.some_data.level >= 4
- && room == Room1 ||
- global.some_data.digimonid == 10 && global.some_data.level >= 4
- && room == Room1
- 
+if global.evolutionscene == true
 {
-	global.Evolutionprocess = true
-	if !instance_exists(Ofloatingthought)
-	{
-		instance_create_depth(500,1200,2,Ofloatingthought)
-	}
-	if !instance_exists(Ofloatingevo)
-	{
-		instance_create_depth(500,1180,1,Ofloatingevo)
-	}
-}
-if global.some_data.digimonid == 2 && global.some_data.level >= 6
-&& room == Room1 ||
-global.some_data.digimonid == 6 && global.some_data.level >= 6 //canoweissmon and regulusmon
-&& room == Room1
-{
-	global.Evolutionprocess = true
-	if !instance_exists(Ofloatingthought)
-	{
-		instance_create_depth(500,1000,2,Ofloatingthought)
-	}
-	if !instance_exists(Ofloatingevo)
-	{
-		instance_create_depth(500,980,1,Ofloatingevo)
-	}
+	instance_destroy(Ofloatingsleep)
+	instance_destroy(Ofloatingfood)
+	instance_destroy(Opraise)
+	instance_destroy(Oscold)
 }
 
 
@@ -75,13 +53,12 @@ if global.some_data.experience >=  global.some_data.maxexperience
 	global.some_data.level += 1
 	global.some_data.experience = 0 
 	global.some_data.maxexperience += 25
-	
 }
 //index
-if global.some_data.sleep == false && global.celebration == false && global.Evolutionprocess == false 
+if global.some_data.sleep == false && global.celebration == false
 && global.train == false && global.run == false && global.walk == false && global.digimonattack == false 
-&& global.damage == false && global.tap == false  && global.egghatching == false
-&& global.eating == false && global.celebration == false
+&& global.damage == false  && global.egghatching == false
+&& global.eating == false && global.celebration == false 
 {
 	if global.some_data.digimonid == -3
 	{
@@ -209,11 +186,167 @@ if global.some_data.sleep == false && global.celebration == false && global.Evol
 		global.digimontier = "champion"
 		global.digimonname = "Wezengammamon"
 	}
+		if global.some_data.digimonid == 11
+	{
+		sprite_index = Sdigieggstill
+		global.digimonvel = 0 
+		global.digimonhp = 0 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Null"
+		global.digimontier = "Egg"
+		global.digimonname = "Digiegg"
+		instance_create_depth(0,0,-1600,Obuttoncover)
+	}
+	if global.some_data.digimonid == 12
+	{
+		sprite_index = Sbotamon
+		global.digimonvel = 0 
+		global.digimonhp = 0 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Baby I"
+		global.digimonname = "Botamon"
+		instance_destroy(Obuttoncover)
+	}
+	if global.some_data.digimonid == 13
+	{
+		sprite_index = Skoromon
+		global.digimonvel = 2 
+		global.digimonhp = 5 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Baby II"
+		global.digimonname = "Koromon"
+	}
+	if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumon
+		global.digimonvel = 3 
+		global.digimonhp = 10 //1000
+		global.digimonatk = 1  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "rookie"
+		global.digimonname = "Agumon"
+	}
+	if global.some_data.digimonid == 15
+	{
+		sprite_index = Sgreymon
+		global.digimonvel = 4 
+		global.digimonhp = 15 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "champion"
+		global.digimonname = "Greymon"
+	}
+	if global.some_data.digimonid == 16
+	{
+		sprite_index = Smetalgreymon
+		global.digimonvel = 5 
+		global.digimonhp = 20 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "Ultimate"
+		global.digimonname = "MetalGreymon"
+	}
+	if global.some_data.digimonid == 17
+	{
+		sprite_index = Swargreymon
+		global.digimonvel = 5 
+		global.digimonhp = 30 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "Mega"
+		global.digimonname = "Wargreymon"
+	}
+	if global.some_data.digimonid == 18
+	{
+		sprite_index = Sgreymonvirus
+		global.digimonvel = 4 
+		global.digimonhp = 15 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "champion"
+		global.digimonname = "Greymon(Blue)"
+	}
+	if global.some_data.digimonid == 19
+	{
+		sprite_index = Smetalgreymonvirus
+		global.digimonvel = 5 
+		global.digimonhp = 20 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "Ultimate"
+		global.digimonname = "MetalGreymon(virus)"
+	}
+	if global.some_data.digimonid == 20
+	{
+		sprite_index = Sskullgreymon
+		global.digimonvel = 5 
+		global.digimonhp = 15 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "Ultimate"
+		global.digimonname = "SkullGreymon"
+	}
+	if global.some_data.digimonid == 21
+	{
+		sprite_index = Sblackwargreymon
+		global.digimonvel = 5 
+		global.digimonhp = 30 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "Mega"
+		global.digimonname = "BlackWargreymon"
+	}
+	if global.some_data.digimonid == 22
+	{
+		sprite_index = Styrannomon
+		global.digimonvel = 4 
+		global.digimonhp = 18 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "Data"
+		global.digimontier = "champion"
+		global.digimonname = "Tyrannomon"
+	}
+	if global.some_data.digimonid == 23
+	{
+		sprite_index = Sextyranomon
+		global.digimonvel = 5 
+		global.digimonhp = 20 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "Ultimate"
+		global.digimonname = "ExTyranomon"
+	}
+}
+
+//Living thing
+if global.some_data.sleep == false && global.eating == false
+&& global.celebration == false && room == Room1
+{
+	if global.status <= 16
+	{
+		global.run = false
+		global.walk = false
+	}
+	if global.status >= 25
+	{
+		global.run = true
+		global.walk = false
+	}
+	if global.status > 16 && global.status < 25
+	{
+		global.walk = true
+		global.run = false
+	}
+	
 }
 
 // sleep
 if global.some_data.sleep == true
 {
+	global.run = false
+	global.walk = false
 		if global.some_data.digimonid == -2
 		{
 			sprite_index = Scurimonsleep
@@ -263,11 +396,62 @@ if global.some_data.sleep == true
 		{
 			Odigimon.sprite_index = Swezensleep
 		}
+		if global.some_data.digimonid == 12
+		{
+			Odigimon.sprite_index = Sbotamonsleep
+		}
+		if global.some_data.digimonid == 13
+		{
+			Odigimon.sprite_index = Skoromonsleep
+		}
+		if global.some_data.digimonid == 14
+		{
+			Odigimon.sprite_index = Sagumonsleep
+		}
+		if global.some_data.digimonid == 15
+		{
+			Odigimon.sprite_index = Sgreymonsleep
+		}
+		if global.some_data.digimonid == 16
+		{
+			Odigimon.sprite_index = Smetalgreymonsleep
+		}
+		if global.some_data.digimonid == 17
+		{
+			Odigimon.sprite_index = Swargreymonsleep
+		}
+		if global.some_data.digimonid == 18
+		{
+			Odigimon.sprite_index = Sgreymonvirussleep
+		}
+		if global.some_data.digimonid == 19
+		{
+			Odigimon.sprite_index = Smetalgreymonvirussleep
+		}
+		if global.some_data.digimonid == 20
+		{
+			Odigimon.sprite_index = Sskullgreymonsleep
+		}
+		if global.some_data.digimonid == 21
+		{
+			Odigimon.sprite_index = Sblackwargreymonsleep
+		}
+		if global.some_data.digimonid == 22
+		{
+			Odigimon.sprite_index = Styrannomonsleep
+		}
+		if global.some_data.digimonid == 23
+		{
+			Odigimon.sprite_index = Sextyranomonsleep
+		}
 }
 
 // Happy
 if global.celebration == true
 {
+	global.run = false 
+	global.walk = false
+	
 		if global.some_data.digimonid == -2
 		{
 			sprite_index = Scurimonhappy
@@ -310,12 +494,59 @@ if global.celebration == true
 		}
 		if global.some_data.digimonid == 9
 		{
-
 			Odigimon.sprite_index = Skaushappy
 		}
 		if global.some_data.digimonid == 10
 		{
 			Odigimon.sprite_index = Swezenhappy
+		}
+		if global.some_data.digimonid == 12
+		{
+			Odigimon.sprite_index = Sbotamonhappy
+		}
+		if global.some_data.digimonid == 13
+		{
+			Odigimon.sprite_index = Skoromonhappy
+		}
+		if global.some_data.digimonid == 14
+		{
+			Odigimon.sprite_index = Sagumonhappy
+		}
+		if global.some_data.digimonid == 15
+		{
+			Odigimon.sprite_index = Sgreymonhappy
+		}
+		if global.some_data.digimonid == 16
+		{
+			Odigimon.sprite_index = Smetalgreymonhappy
+		}
+		if global.some_data.digimonid == 17
+		{
+			Odigimon.sprite_index = Swargreymonhappy
+		}
+		if global.some_data.digimonid == 18
+		{
+			Odigimon.sprite_index = Sgreymonvirushappy
+		}
+		if global.some_data.digimonid == 19
+		{
+			Odigimon.sprite_index = Smetalgreymonvirushappy
+		}
+		if global.some_data.digimonid == 20
+		{
+			Odigimon.sprite_index = Sskullgreymonhappy
+		}
+		if global.some_data.digimonid == 21
+		{
+			Odigimon.sprite_index = Sblackwargreymonhappy
+		}
+		if global.some_data.digimonid == 22
+		{
+			Odigimon.sprite_index = Styrannomonhappy
+		}
+		if global.some_data.digimonid == 23
+		{
+			Odigimon.sprite_index = Sextyranomonhappy
 		}
 }
 // attack
@@ -327,12 +558,10 @@ if global.digimonattack == true
 	}
 	if global.some_data.digimonid == 1
 	{
-
 		Odigimon.sprite_index = Sbetelatk
 	}
 	if global.some_data.digimonid == 5
 	{
-
 		Odigimon.sprite_index = Sgulusatk
 	}
 	if global.some_data.digimonid == 2
@@ -359,6 +588,46 @@ if global.digimonattack == true
 	if global.some_data.digimonid == 10
 	{
 		Odigimon.sprite_index = Swezenatk
+	}
+	if global.some_data.digimonid == 14
+	{
+		Odigimon.sprite_index = Sagumonatk
+	}
+	if global.some_data.digimonid == 15
+	{
+		Odigimon.sprite_index = Sgreymonatk
+	}
+	if global.some_data.digimonid == 16
+	{
+		Odigimon.sprite_index = Smetalgreymonatk
+	}
+	if global.some_data.digimonid == 17
+	{
+		Odigimon.sprite_index = Swargreymonatk
+	}
+	if global.some_data.digimonid == 18
+	{
+		Odigimon.sprite_index = Sgreymonvirusatk
+	}
+	if global.some_data.digimonid == 19
+	{
+		Odigimon.sprite_index = Smetalgreymonvirusatk
+	}
+	if global.some_data.digimonid == 20
+	{
+		Odigimon.sprite_index = Sskullgreymonatk
+	}
+	if global.some_data.digimonid == 21
+	{
+		Odigimon.sprite_index = Sblackwargreymonatk
+	}
+	if global.some_data.digimonid == 22
+	{
+		Odigimon.sprite_index = Styrannomonatk
+	}
+	if global.some_data.digimonid == 23
+	{
+		Odigimon.sprite_index = Sextyranomonatk
 	}
 }
 
@@ -411,8 +680,9 @@ if (room == Rdefeat)
 		Odigimon.sprite_index = Scannosleep
 	}
 }
+
 //running away
-if room == Roombattle && global.run == true
+if global.run == true //room == Roombattle && global.run == true
 {
 	if global.some_data.digimonid == 5
 	{
@@ -430,17 +700,53 @@ if room == Roombattle && global.run == true
 	{
 		sprite_index = Sarcturusrun
 	}
+		if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumonrun
+	}
+	if global.some_data.digimonid == 15
+	{
+		Odigimon.sprite_index = Sgreymonrun
+	}
+	if global.some_data.digimonid == 16
+	{
+		Odigimon.sprite_index = Smetalgreymonrun
+	}
+	if global.some_data.digimonid == 17
+	{
+		Odigimon.sprite_index = Swargreymonrun
+	}
+	if global.some_data.digimonid == 18
+	{
+		Odigimon.sprite_index = Sgreymonvirusrun
+	}
+	if global.some_data.digimonid == 19
+	{
+		Odigimon.sprite_index = Smetalgreymonvirusrun
+	}
+	if global.some_data.digimonid == 20
+	{
+		Odigimon.sprite_index = Sskullgreymonrun
+	}
+	if global.some_data.digimonid == 21
+	{
+		Odigimon.sprite_index = Sblackwargreymonrun
+	}
+	if global.some_data.digimonid == 22
+	{
+		Odigimon.sprite_index = Styrannomonrun
+	}
+	if global.some_data.digimonid == 23
+	{
+		Odigimon.sprite_index = Sextyranomonrun
+	}
 }
 
-
-
-//if global.some_data.sleep == false && global.train == false && global.run == false && global.walk == false 
-//&& global.Evolutionprocess == false && global.digimonattack == false && global.damage == false
-//&& room != Rvictory && room != Rdefeat && global.tap == false && global.eating == false && global.celebration == false
-//&& global.Evolutionprocess == false
-
+//eating
 if global.eating == true && global.some_data.sleep == false
 {
+	global.walk = false
+	global.run = false
 	if global.some_data.digimonid == -2
 	{
 		sprite_index = Scurimonhappy
@@ -467,12 +773,10 @@ if global.eating == true && global.some_data.sleep == false
 	}
 	if global.some_data.digimonid == 6
 	{
-
 		Odigimon.sprite_index = Sreguluseating
 	}
 	if global.some_data.digimonid == 7
 	{
-
 		Odigimon.sprite_index = Ssiriuseating
 	}
 	if global.some_data.digimonid == 8
@@ -481,14 +785,62 @@ if global.eating == true && global.some_data.sleep == false
 	}
 	if global.some_data.digimonid == 9
 	{
-
 		Odigimon.sprite_index = Skauseating
 	}
 	if global.some_data.digimonid == 10
 	{
 		Odigimon.sprite_index = Swezeneating
 	}
+	if global.some_data.digimonid == 12
+	{
+		sprite_index = Sbotamonhappy
+	}
+	if global.some_data.digimonid == 13
+	{
+		sprite_index = Skoromonhappy
+	}
+	if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumoneating
+	}
+	if global.some_data.digimonid == 15
+	{
+		Odigimon.sprite_index = Sgreymoneating
+	}
+	if global.some_data.digimonid == 16
+	{
+		Odigimon.sprite_index = Smetalgreymonhappy
+	}
+	if global.some_data.digimonid == 17
+	{
+		Odigimon.sprite_index = Swargreymoneating
+	}
+	if global.some_data.digimonid == 18
+	{
+		Odigimon.sprite_index = Sgreymonviruseating
+	}
+	if global.some_data.digimonid == 19
+	{
+		Odigimon.sprite_index = Smetalgreymonvirushappy
+	}
+	if global.some_data.digimonid == 20
+	{
+		Odigimon.sprite_index = Sskullgreymoneating
+	}
+	if global.some_data.digimonid == 21
+	{
+		Odigimon.sprite_index = Sblackwargreymoneating
+	}
+	if global.some_data.digimonid == 22
+	{
+		Odigimon.sprite_index = Styrannomoneating
+	}
+	if global.some_data.digimonid == 23
+	{
+		Odigimon.sprite_index = Sextyranomoneating
+	}
 }
+//train
 if global.train == true
 {
 	if global.some_data.digimonid == -2
@@ -517,12 +869,10 @@ if global.train == true
 	}
 	if global.some_data.digimonid == 6
 	{
-
 		Odigimon.sprite_index = Sregulustrain
 	}
 	if global.some_data.digimonid == 7
 	{
-
 		Odigimon.sprite_index = Ssiriustrain
 	}
 	if global.some_data.digimonid == 8
@@ -531,12 +881,51 @@ if global.train == true
 	}
 	if global.some_data.digimonid == 9
 	{
-
 		Odigimon.sprite_index = Skaustrain
 	}
 	if global.some_data.digimonid == 10
 	{
 		Odigimon.sprite_index = Swezentrain
+	}
+	if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumonrun
+	}
+	if global.some_data.digimonid == 15
+	{
+		Odigimon.sprite_index = Sgreymontrain
+	}
+	if global.some_data.digimonid == 16
+	{
+		Odigimon.sprite_index = Smetalgreymontrain
+	}
+	if global.some_data.digimonid == 17
+	{
+		Odigimon.sprite_index = Swargreymontrain
+	}
+	if global.some_data.digimonid == 18
+	{
+		Odigimon.sprite_index = Sgreymonvirustrain
+	}
+	if global.some_data.digimonid == 19
+	{
+		Odigimon.sprite_index = Smetalgreymonvirustrain
+	}
+	if global.some_data.digimonid == 20
+	{
+		Odigimon.sprite_index = Sskullgreymontrain
+	}
+	if global.some_data.digimonid == 21
+	{
+		Odigimon.sprite_index = Sblackwargreymontrain
+	}
+	if global.some_data.digimonid == 22
+	{
+		Odigimon.sprite_index = Styrannomontrain
+	}
+	if global.some_data.digimonid == 23
+	{
+		Odigimon.sprite_index = Sextyranomontrain
 	}
 }
 // run
@@ -544,11 +933,11 @@ if global.run == true
 {
 	if global.some_data.digimonid == -2
 	{
-		sprite_index = Scurimonhappy
+		sprite_index = Scurimon
 	}
 	if global.some_data.digimonid == -1
 	{
-		sprite_index = Sgurimonhappy
+		sprite_index = Sgurimon
 	}
 	if global.some_data.digimonid == 0
 	{
@@ -589,5 +978,102 @@ if global.run == true
 	{
 		Odigimon.sprite_index = Swezenrun
 	}
+	if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumonrun
+	}
 }
+
+// walk
+if global.walk == true
+{
+	if global.some_data.digimonid == -2
+	{
+		sprite_index = Scurimon
+	}
+	if global.some_data.digimonid == -1
+	{
+		sprite_index = Sgurimon
+	}
+	if global.some_data.digimonid == 0
+	{
+		sprite_index = Srealgammawalk;
+	}
+	if global.some_data.digimonid == 1
+	{
+		sprite_index = Sbetelwalk;
+	}
+	if global.some_data.digimonid == 5
+	{
+		sprite_index = Sguluswalk;
+	}
+	if global.some_data.digimonid == 2
+	{
+		sprite_index = Scannowalk;
+	}
+	if global.some_data.digimonid == 6
+	{
+
+		Odigimon.sprite_index = Sreguluswalk;
+	}
+	if global.some_data.digimonid == 7
+	{
+
+		Odigimon.sprite_index = Ssiriuswalk;
+	}
+	if global.some_data.digimonid == 8
+	{
+		Odigimon.sprite_index = Sarcturuswalk;
+	}
+	if global.some_data.digimonid == 9
+	{
+
+		Odigimon.sprite_index = Skauswalk
+	}
+	if global.some_data.digimonid == 10
+	{
+		Odigimon.sprite_index = Swezenwalk
+	}
+	if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumonwalk
+	}
+	if global.some_data.digimonid == 15
+	{
+		Odigimon.sprite_index = Sgreymonwalk
+	}
+	if global.some_data.digimonid == 16
+	{
+		Odigimon.sprite_index = Smetalgreymonwalk
+	}
+	if global.some_data.digimonid == 17
+	{
+		Odigimon.sprite_index = Swargreymonwalk
+	}
+	if global.some_data.digimonid == 18
+	{
+		Odigimon.sprite_index = Sgreymonviruswalk
+	}
+	if global.some_data.digimonid == 19
+	{
+		Odigimon.sprite_index = Smetalgreymonviruswalk
+	}
+	if global.some_data.digimonid == 20
+	{
+		Odigimon.sprite_index = Sskullgreymonwalk
+	}
+	if global.some_data.digimonid == 21
+	{
+		Odigimon.sprite_index = Sblackwargreymonwalk
+	}
+	if global.some_data.digimonid == 22
+	{
+		Odigimon.sprite_index = Styrannomonwalk
+	}
+	if global.some_data.digimonid == 23
+	{
+		Odigimon.sprite_index = Sextyranomonwalk
+	}
+}
+
 

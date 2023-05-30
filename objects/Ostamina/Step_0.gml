@@ -11,8 +11,8 @@ if global.some_data.stamina > 6
 
 if global.some_data.sleep == true
 {
-	var staminaIncreaseRate = 0.00000001;
-	if global.some_data.stamina > 0
+	var staminaIncreaseRate = 0.0000001;
+	if global.some_data.stamina >= 0
 	{
 		global.some_data.stamina += (staminaIncreaseRate * delta_time);
 	}
@@ -45,4 +45,17 @@ else if global.some_data.stamina >= 1
 else if global.some_data.stamina >= 0
 {
 	global.some_data.stamina = 0
+}
+
+if global.some_data.stamina == 0 && global.digimontier != "Egg"
+&& global.digimontier != "Baby I"&& global.digimontier != "Baby II"
+{
+	if !instance_exists(Ofloatingsleep)
+		{
+			instance_create_depth(500,1100,2,Ofloatingsleep)
+		}
+}
+if global.some_data.sleep == true
+{
+	instance_destroy(Ofloatingsleep)
 }

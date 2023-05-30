@@ -15,64 +15,53 @@ interact = function() {
 	
 	if ((global.digimonvel+global.rookievelbonus) >= (global.enemyvel+global.enemyvelbonus))
 		{
-			
-				if !instance_exists(Oattack)
-				{
-					instance_create_depth(400,1700,-10,Oattack)
-				}
 			global.digimonattack = true
-			
-			if global.some_data.digimonid == 0
-			{
-				Odigimon.sprite_index = Srealgammaattack
-				if !instance_exists(Oattack)
-			{
-				instance_create_depth(340,1850,-10,Oattack)
-			}
-			}
-			if global.some_data.digimonid == 1
-			{	
-				Odigimon.sprite_index = Sbetelatk
-				if !instance_exists(Oattack)
+			if !instance_exists(Oattack)
 			{
 				instance_create_depth(400,1700,-10,Oattack)
+			}		
+
+			if global.some_data.digimonid == 1 || global.some_data.digimonid == 6
+			|| global.some_data.digimonid == 23 || global.some_data.digimonid == 7
+			{	
 				Oattack.sprite_index = atk_s_16
-			}
 			}
 			if global.some_data.digimonid == 5
 			{	
-				Odigimon.sprite_index = Sgulusatk
-				if !instance_exists(Oattack)
-			{
-				instance_create_depth(400,1700,-10,Oattack)
-				Oattack.sprite_index = atk_s_11
-			}
+				Oattack.sprite_index = atk_s_20
 			}
 			if global.some_data.digimonid == 2
-			{	
-				Odigimon.sprite_index = Scannoattack
-				if !instance_exists(Oattack)
-				{
-				instance_create_depth(400,1700,-10,Oattack)
-				Oattack.sprite_index = atk_l_17
-				}			
+			{
+				Oattack.sprite_index = atk_l_17		
 			}
-			if global.some_data.digimonid == 6
-			{		
-				Oattack.sprite_index = atk_l_16
-			}
-			if global.some_data.digimonid == 7
-			{		
-				Oattack.sprite_index = atk_l_16
-			}
-			if global.some_data.digimonid == 8
+			if global.some_data.digimonid == 8 || global.some_data.digimonid == 21
 			{		
 				Oattack.sprite_index = atk_l_05
 			}
+			if global.some_data.digimonid == 9
+			{		
+				Oattack.sprite_index = atk_s_20
+			}
+			if global.some_data.digimonid == 10 || global.some_data.digimonid == 16 
+			|| global.some_data.digimonid == 19
+			{		
+				Oattack.sprite_index = atk_l_04
+			}
+			if global.some_data.digimonid == 14
+			{
+				Oattack.sprite_index = atk_s_00
+			}
+			if global.some_data.digimonid == 15 || global.some_data.digimonid == 22
+			|| global.some_data.digimonid == 18
+			{
+				Oattack.sprite_index = atk_s_04
+			}
+			if global.some_data.digimonid == 17 || global.some_data.digimonid == 21
+			{
+				Oattack.sprite_index = atk_l_17	
+			}
+			}
 			
-			
-					
-}
 	if ((global.enemyvel+global.enemyvelbonus) >= (global.digimonvel+global.rookievelbonus))
 		{	
 			global.enemyattack = true

@@ -1,8 +1,5 @@
 {
-  "spriteId": {
-    "name": "digiviceoff",
-    "path": "sprites/digiviceoff/digiviceoff.yy",
-  },
+  "spriteId": null,
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

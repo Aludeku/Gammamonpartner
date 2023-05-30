@@ -1,15 +1,12 @@
  /// @description Insert description here
 // You can write your code in this editor
-
-global.run = false;
-if global.run == true
-{
-	Odigimon.sprite_index = Sgammarun
-}	
 global.some_data = {
 	digimonid : 0,
 	age : 0,
+	caremistake: 0,
 	battles : 0,
+	wins: 0,
+	losses: 0,
 	bgimage : 0,
 	timerevolution: 0,
 	hunger: 0,
@@ -29,7 +26,6 @@ global.some_data = {
 	hptrain: 0,
 
 }
-	
 global.walk = false;
 global.some_data.sleep = false;
 global.information = false

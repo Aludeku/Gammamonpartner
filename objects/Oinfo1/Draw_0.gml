@@ -12,8 +12,9 @@ if sprite_index == Sinfotemplate
 	draw_text(100,790,string(global.digimonname))
 	draw_set_color(c_red)
 	draw_set_font(Fontpixel)
-	draw_text(470,1000,"Level = "+ string(global.some_data.level));
+	draw_text(470,950,"Level = "+ string(global.some_data.level));
 	draw_set_color(c_black)
+	draw_text(470,1010,"mistakes = "+ string(global.some_data.caremistake));
 	draw_text(470,1080,"Battles = " + string(global.some_data.battles));
 	draw_text(460 ,1160,"Type = "+ string(global.digimontype));
 	draw_set_font(Font_a0)

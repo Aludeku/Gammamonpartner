@@ -11,6 +11,7 @@
 
  //   global.res_width = global.res_height * _display_ratio;
 //}
+randomize()
 global.egghatching = false
 global.eating = false
 global.tap = false
@@ -25,6 +26,12 @@ global.damage = false
 global.celebration = false
 image_xscale = 15
 image_yscale = 15
+
+//Living thing
+alarm[4] = 360;
+global.status = irandom(30)
+
+
 //poop
 if global.some_data.hunger >= 4 && room == Room1
 {
@@ -165,5 +172,137 @@ if global.some_data.sleep == false
 		global.digimontype = "Data"
 		global.digimontier = "champion"
 		global.digimonname = "Wezengammamon"
+	}
+	if global.some_data.digimonid == 11
+	{
+		sprite_index = Sdigieggstill
+		global.digimonvel = 0 
+		global.digimonhp = 0 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Null"
+		global.digimontier = "Egg"
+		global.digimonname = "Digiegg"
+	}
+	if global.some_data.digimonid == 12
+	{
+		sprite_index = Sbotamon
+		global.digimonvel = 0 
+		global.digimonhp = 0 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Baby I"
+		global.digimonname = "Botamon"
+		alarm_set(3,1280)
+	}
+	if global.some_data.digimonid == 13
+	{
+		sprite_index = Skoromon
+		global.digimonvel = 2 
+		global.digimonhp = 5 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Baby II"
+		global.digimonname = "Koromon"
+		alarm_set(3,1280)
+	}
+	if global.some_data.digimonid == 14
+	{
+		sprite_index = Sagumon
+		global.digimonvel = 3 
+		global.digimonhp = 10 //1000
+		global.digimonatk = 1  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "rookie"
+		global.digimonname = "Agumon"
+	}
+	if global.some_data.digimonid == 15
+	{
+		sprite_index = Sgreymon
+		global.digimonvel = 4 
+		global.digimonhp = 15 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "champion"
+		global.digimonname = "Greymon"
+	}
+	if global.some_data.digimonid == 16
+	{
+		sprite_index = Smetalgreymon
+		global.digimonvel = 5 
+		global.digimonhp = 20 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "Ultimate"
+		global.digimonname = "MetalGreymon"
+	}
+	if global.some_data.digimonid == 17
+	{
+		sprite_index = Swargreymon
+		global.digimonvel = 5 
+		global.digimonhp = 30 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "Mega"
+		global.digimonname = "Wargreymon"
+	}
+	if global.some_data.digimonid == 18
+	{
+		sprite_index = Sgreymonvirus
+		global.digimonvel = 4 
+		global.digimonhp = 15 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "champion"
+		global.digimonname = "Greymon(Blue)"
+	}
+	if global.some_data.digimonid == 19
+	{
+		sprite_index = Smetalgreymonvirus
+		global.digimonvel = 5 
+		global.digimonhp = 20 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "Ultimate"
+		global.digimonname = "MetalGreymon(virus)"
+	}
+	if global.some_data.digimonid == 20
+	{
+		sprite_index = Sskullgreymon
+		global.digimonvel = 5 
+		global.digimonhp = 15 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "Ultimate"
+		global.digimonname = "SkullGreymon"
+	}
+	if global.some_data.digimonid == 21
+	{
+		sprite_index = Sblackwargreymon
+		global.digimonvel = 5 
+		global.digimonhp = 30 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "virus"
+		global.digimontier = "Mega"
+		global.digimonname = "BlackWargreymon"
+	}
+	if global.some_data.digimonid == 22
+	{
+		sprite_index = Styrannomon
+		global.digimonvel = 4 
+		global.digimonhp = 18 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "Data"
+		global.digimontier = "champion"
+		global.digimonname = "Tyrannomon"
+	}
+	if global.some_data.digimonid == 23
+	{
+		sprite_index = Sextyranomon
+		global.digimonvel = 5 
+		global.digimonhp = 20 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "vaccine"
+		global.digimontier = "Ultimate"
+		global.digimonname = "ExTyranomon"
 	}
 }

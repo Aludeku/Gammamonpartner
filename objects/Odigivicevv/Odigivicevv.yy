@@ -1,7 +1,7 @@
 {
   "spriteId": {
-    "name": "digivice",
-    "path": "sprites/digivice/digivice.yy",
+    "name": "Sdigivice",
+    "path": "sprites/Sdigivice/Sdigivice.yy",
   },
   "solid": false,
   "visible": true,
