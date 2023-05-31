@@ -39,7 +39,7 @@ if room == Rtraininghp
 		global.some_data.hptrain += 5
 		instance_destroy(Otrainningbutton)
 		audio_play_sound(gym__1___2_,1,false)
-		instance_create_depth(500,1225,-20,Osmallreport)
+		instance_create_depth(500,1000,-20,Osmallreport)
 		alarm[1] = 180
 	}
 	if global.pontuation < global.maxpontuation

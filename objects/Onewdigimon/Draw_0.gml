@@ -12,6 +12,10 @@ if sprite_index == Sagumon16
 {
 	draw_text_colour(540,1640,string("Agumon"),c_yellow,c_yellow,c_orange,c_orange,1)
 }
+if sprite_index == Sgumdramon16
+{
+	draw_text_colour(540,1640,string("Gumdramon"),c_purple,c_purple,c_red,c_red,1)
+}
 if sprite_index == Sguilmon16
 {
 	draw_text_colour(540,1640,string("Not available"),c_red,c_red,c_red,c_red,1)

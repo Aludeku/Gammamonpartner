@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Omnimon",
-    "path": "folders/Sprites/Enemies/Omnimon.yy",
+    "name": "Splashes",
+    "path": "folders/Sprites/Splashes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Ssplashomnimon",

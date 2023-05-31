@@ -3,8 +3,8 @@
 
 
 // Inherit the parent event
-image_xscale = 2.5
-image_yscale = 2.5
+image_xscale = 2.3
+image_yscale = 2.3
 event_inherited();
 
 interact = function() {

@@ -4,7 +4,7 @@ if global.digimontier == "Egg" || global.digimontier == "Baby I" || global.digim
 {
 	global.some_data.stamina = 0
 }
-if global.some_data.stamina > 6
+if global.some_data.stamina >= 6
 {
 	global.some_data.stamina = 6
 }
@@ -48,12 +48,23 @@ else if global.some_data.stamina >= 0
 }
 
 if global.some_data.stamina == 0 && global.digimontier != "Egg"
-&& global.digimontier != "Baby I"&& global.digimontier != "Baby II"
+&& global.digimontier != "Baby I"&& global.digimontier != "Baby II" && room == Room1
 {
+	if global.digimontier == "rookie"
 	if !instance_exists(Ofloatingsleep)
 		{
-			instance_create_depth(500,1100,2,Ofloatingsleep)
+			instance_create_depth(500,1200,2,Ofloatingsleep)
 		}
+	if global.digimontier == "champion" || global.digimontier == "Ultimate" 
+	|| global.digimontier == "Mega" 
+	if !instance_exists(Ofloatingsleep)
+		{
+			instance_create_depth(250,950,2,Ofloatingsleep)
+		}
+}
+if global.some_data.stamina > 0
+{
+	instance_destroy(Ofloatingsleep)
 }
 if global.some_data.sleep == true
 {

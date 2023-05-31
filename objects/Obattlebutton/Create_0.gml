@@ -21,12 +21,19 @@ interact = function() {
 				instance_create_depth(400,1700,-10,Oattack)
 			}		
 
-			if global.some_data.digimonid == 1 || global.some_data.digimonid == 6
-			|| global.some_data.digimonid == 23 || global.some_data.digimonid == 7
+			if global.some_data.digimonid == 7 || global.some_data.digimonid == 26
+			{	
+				Oattack.sprite_index = atk_l_02
+			}
+			if global.some_data.digimonid == 25
+			{
+				Oattack.sprite_index = atk_s_11
+			}
+			if global.some_data.digimonid == 1 
 			{	
 				Oattack.sprite_index = atk_s_16
 			}
-			if global.some_data.digimonid == 5
+			if global.some_data.digimonid == 5 
 			{	
 				Oattack.sprite_index = atk_s_20
 			}
@@ -34,20 +41,25 @@ interact = function() {
 			{
 				Oattack.sprite_index = atk_l_17		
 			}
-			if global.some_data.digimonid == 8 || global.some_data.digimonid == 21
+			if global.some_data.digimonid == 21
+			|| global.some_data.digimonid == 6|| global.some_data.digimonid == 23 
 			{		
+				Oattack.sprite_index = atk_l_16
+			}
+			if global.some_data.digimonid == 8
+			{
 				Oattack.sprite_index = atk_l_05
 			}
 			if global.some_data.digimonid == 9
 			{		
-				Oattack.sprite_index = atk_s_20
+				Oattack.sprite_index = atk_s_05
 			}
 			if global.some_data.digimonid == 10 || global.some_data.digimonid == 16 
 			|| global.some_data.digimonid == 19
 			{		
 				Oattack.sprite_index = atk_l_04
 			}
-			if global.some_data.digimonid == 14
+			if global.some_data.digimonid == 14 || global.some_data.digimonid == 24
 			{
 				Oattack.sprite_index = atk_s_00
 			}
@@ -65,61 +77,77 @@ interact = function() {
 	if ((global.enemyvel+global.enemyvelbonus) >= (global.digimonvel+global.rookievelbonus))
 		{	
 			global.enemyattack = true
-			if global.enemyid = 0
+			if !instance_exists(Oenemyattack)
 			{
-				Oenemy.sprite_index = Sagumon2006atk
-				if !instance_exists(Oenemyattack)
-				{
-					instance_create_depth(815,1380,-10,Oenemyattack)
-				}
+				instance_create_depth(815,1380,-10,Oenemyattack)
 			}
-			if global.enemyid = 1
-			{
-				Oenemy.sprite_index = Sgeoatk
-				if !instance_exists(Oenemyattack)
-				{
-					instance_create_depth(815,1280,-10,Oenemyattack)
-				}
+			
+			if  global.enemyid == 7 ||  global.enemyid == 26
+			|| global.enemyid == 60
+			{	
+				Oenemyattack.sprite_index = atk_l_02
 			}
-			if global.enemyid = 2
+			if global.enemyid == 25
 			{
-				Oenemy.sprite_index = Sterrieratk
-				if !instance_exists(Oenemyattack)
-				{
-					instance_create_depth(815,1280,-10,Oenemyattack)
-					Oenemyattack.sprite_index = atk_s_33
-				}
+				Oenemyattack.sprite_index = atk_s_11
 			}
-			if global.enemyid = 3
+			if  global.enemyid == 1 
+			{	
+				Oenemyattack.sprite_index = atk_s_16
+			}
+			if  global.enemyid == 5 
+			{	
+				Oenemyattack.sprite_index = atk_s_20
+			}
+			if  global.enemyid == 2
 			{
-				Oenemy.sprite_index = Sarresteratk
-				if !instance_exists(Oenemyattack)
-				{
-					instance_create_depth(815,1280,-10,Oenemyattack)
-					Oenemyattack.sprite_index = atk_s_11
+				Oenemyattack.sprite_index = atk_l_17		
+			}
+			if  global.enemyid == 21
+			||  global.enemyid == 6||  global.enemyid == 23 
+			{		
+				Oenemyattack.sprite_index = atk_l_16
+			}
+			if  global.enemyid == 8
+			{
+				Oenemyattack.sprite_index = atk_l_05
+			}
+			if  global.enemyid == 9
+			{		
+				Oenemyattack.sprite_index = atk_s_05
+			}
+			if  global.enemyid == 10 ||  global.enemyid == 16 
+			||  global.enemyid == 19
+			{		
+				Oenemyattack.sprite_index = atk_l_04
+			}
+			if  global.enemyid == 14 || global.enemyid == 11
+			{
+				Oenemyattack.sprite_index = atk_s_00
+			}
+			if  global.enemyid == 15 ||  global.enemyid == 22
+			||  global.enemyid == 18 ||  global.enemyid == 12
+			{
+				Oenemyattack.sprite_index = atk_s_04
+			}
+			if  global.enemyid == 17 ||  global.enemyid == 21
+			{
+				Oenemyattack.sprite_index = atk_l_17	
+			}
+			if global.enemyid == 12
+			{
+				Oenemyattack.sprite_index = atk_s_04
+			}
+			if global.enemyid = 13
+			{
+				Oenemyattack.sprite_index = atk_s_33
+			}	
+			if global.enemyid = 75 || global.enemyid == 0
+			{
+				Oenemyattack.sprite_index = atk_s_01
 
-				}
 			}
-			if global.enemyid = 4
-			{
-				Oenemy.sprite_index = Sgabumonatk
-				if !instance_exists(Oenemyattack)
-				{
-					instance_create_depth(815,1280,-10,Oenemyattack)
-					Oenemyattack.sprite_index = atk_s_01
-				}
-			}
-			if global.enemyid = 5
-			{
-				Oenemy.sprite_index = Somnimonenemyatksword
-				if !instance_exists(Oenemyattack)
-				{
-					instance_create_depth(815,1280,-10,Oenemyattack)
-					Oenemyattack.sprite_index = atk_l_02
-				}
-			}
-	
+				
 	instance_destroy()
-
 }
 }

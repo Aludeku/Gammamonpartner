@@ -31,9 +31,8 @@ image_yscale = 15
 alarm[4] = 360;
 global.status = irandom(30)
 
-
 //poop
-if global.some_data.hunger >= 4 && room == Room1
+if global.some_data.hunger > 3 && room == Room1
 {
 	alarm[2] = 840;
 }
@@ -304,5 +303,69 @@ if global.some_data.sleep == false
 		global.digimontype = "vaccine"
 		global.digimontier = "Ultimate"
 		global.digimonname = "ExTyranomon"
+	}
+	if global.some_data.digimonid == -4
+	{
+		sprite_index = Seggchibimon
+		global.digimonvel = 0
+		global.digimonhp = 0
+		global.digimonatk = 0
+		global.digimontype = "Null"
+		global.digimontier = "Egg"
+		global.digimonname = "Digiegg"
+	}
+	if global.some_data.digimonid == -5
+	{
+
+		sprite_index = Schicomon
+		global.digimonvel = 0 
+		global.digimonhp = 0 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Baby I"
+		global.digimonname = "Chicomon"
+		alarm_set(3,1280)
+	}
+	if global.some_data.digimonid == -6
+	{
+
+		sprite_index = Schibimon
+		global.digimonvel = 2 
+		global.digimonhp = 5 //1000
+		global.digimonatk = 0  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Baby II"
+		global.digimonname = "Chibimon"
+		alarm_set(3,1280)
+	}
+	if global.some_data.digimonid == 24
+	{
+		sprite_index = Sgumdramon
+		global.digimonvel = 3 
+		global.digimonhp = 10 
+		global.digimonatk = 1 
+		global.digimontype = "Free"
+		global.digimontier = "rookie"
+		global.digimonname = "Gumdramon"
+	}
+	if global.some_data.digimonid == 25
+	{
+		sprite_index = Sarrester
+		global.digimonvel = 4
+		global.digimonhp = 17 //1000
+		global.digimonatk = 2  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Ultimate"
+		global.digimonname = "Arresterdramon"
+	}
+	if global.some_data.digimonid == 26
+	{
+		sprite_index = Sarrestersuper
+		global.digimonvel = 6
+		global.digimonhp = 30 //1000
+		global.digimonatk = 3  //irandom_range(150,200)
+		global.digimontype = "Free"
+		global.digimontier = "Mega"
+		global.digimonname = "ArresterdramonSM"
 	}
 }

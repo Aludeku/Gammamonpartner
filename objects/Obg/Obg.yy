@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "SCleanbg",
+    "path": "sprites/SCleanbg/SCleanbg.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

@@ -9,7 +9,9 @@ global.some_data.hunger -= 1
 instance_destroy(Ofloatingevo)
 global.some_data.stamina += 6
 global.some_data.battles = 0
-
+global.some_data.atktrain = 0
+global.some_data.hptrain = 0
+global.some_data.veltrain = 0
 //index
 if global.some_data.digimonid == -3 // egg
 {
@@ -147,4 +149,11 @@ else if global.some_data.digimonid == 19 || global.some_data.digimonid == 20 //t
 {
 	global.some_data.digimonid = 21
 }
-//instance_create_depth(800,1700,-20,objbackbutton)
+else if global.some_data.digimonid == 24
+{
+	global.some_data.digimonid = 25
+}
+else if global.some_data.digimonid == 25
+{
+	global.some_data.digimonid = 26
+}

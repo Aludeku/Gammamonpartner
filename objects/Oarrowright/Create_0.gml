@@ -12,6 +12,10 @@ interact = function() {
 	}
 	else if Onewdigimon.sprite_index == Sagumon16
 	{
+		Onewdigimon.sprite_index = Sgumdramon16
+	}
+	else if Onewdigimon.sprite_index == Sgumdramon16
+	{
 		Onewdigimon.sprite_index = Sguilmon16
 	}
 	else if Onewdigimon.sprite_index == Sguilmon16

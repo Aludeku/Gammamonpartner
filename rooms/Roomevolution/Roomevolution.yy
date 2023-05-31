@@ -14,7 +14,6 @@
   ],
   "layers": [
     {"instances":[
-        {"properties":[],"isDnd":false,"objectId":{"name":"Odigiviceoff","path":"objects/Odigiviceoff/Odigiviceoff.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1792.0,"y":1504.0,"resourceVersion":"1.0","name":"inst_6DED120B","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"OdigiviceOg","path":"objects/OdigiviceOg/OdigiviceOg.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":544.0,"y":1760.0,"resourceVersion":"1.0","name":"inst_17700418","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Odigimon","path":"objects/Odigimon/Odigimon.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":-544.0,"y":1312.0,"resourceVersion":"1.0","name":"inst_2BB3FBDC","tags":[],"resourceType":"GMRInstance",},
         {"properties":[],"isDnd":false,"objectId":{"name":"Obgmusic","path":"objects/Obgmusic/Obgmusic.yy",},"inheritCode":false,"hasCreationCode":false,"colour":4294967295,"rotation":0.0,"scaleX":1.0,"scaleY":1.0,"imageIndex":0,"imageSpeed":1.0,"inheritedItemId":null,"frozen":false,"ignore":false,"inheritItemSettings":false,"x":1664.0,"y":224.0,"resourceVersion":"1.0","name":"inst_77884D1D","tags":[],"resourceType":"GMRInstance",},
@@ -25,7 +24,6 @@
   "creationCodeFile": "",
   "inheritCode": false,
   "instanceCreationOrder": [
-    {"name":"inst_6DED120B","path":"rooms/Roomevolution/Roomevolution.yy",},
     {"name":"inst_17700418","path":"rooms/Roomevolution/Roomevolution.yy",},
     {"name":"inst_2BB3FBDC","path":"rooms/Roomevolution/Roomevolution.yy",},
     {"name":"inst_77884D1D","path":"rooms/Roomevolution/Roomevolution.yy",},

@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Agumon2006",
-    "path": "folders/Sprites/Enemies/Agumon2006.yy",
+    "name": "Splashes",
+    "path": "folders/Sprites/Splashes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Ssplash0",

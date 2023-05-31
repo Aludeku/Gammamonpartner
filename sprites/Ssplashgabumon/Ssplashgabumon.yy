@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Gabumon",
-    "path": "folders/Sprites/Enemies/Gabumon.yy",
+    "name": "Splashes",
+    "path": "folders/Sprites/Splashes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Ssplashgabumon",

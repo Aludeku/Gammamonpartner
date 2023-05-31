@@ -3,8 +3,8 @@
 
 var x1 = 585;
 var x2 = 1000;
-var y1= 760;
-var y2= 800;
+var y1= 750;
+var y2= 785;
 var amount = global.some_data.happiness / 100; 
 amount = amount * 100;
 

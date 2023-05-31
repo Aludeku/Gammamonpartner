@@ -2,26 +2,26 @@
 // You can write your code in this editor
 if global.digimontier == "Egg"
 {
-	if global.some_data.digimonid == -3 || global.some_data.digimonid == 11
+	if global.some_data.digimonid == -3 && global.tap == false
+	|| global.some_data.digimonid == 11 && global.tap == false
+	|| global.some_data.digimonid == -4 && global.tap == false
 	{
+		global.tap = true
 		global.egghatching = true
 		audio_play_sound(Free_Egg_Hatching_Sound_Effect,1,false)
-		sprite_index = Sdigiegghatch
-		alarm[3] = 140;
+		if global.some_data.digimonid == -3	|| global.some_data.digimonid == 11 
+		{
+			sprite_index = Sdigiegghatch
+		}
+		if global.some_data.digimonid == -4 
+		{
+			sprite_index = Seggchibimonhatch
+		}
+		alarm[3] = 130;
 	}
 }
-if global.digimontier == "rookie" && global.some_data.level >= 2 && room == Room1 && global.Evolutionprocess == true
-|| global.digimontier == "champion" && global.some_data.level >= 4 && room == Room1 && global.Evolutionprocess == true
-|| global.digimontier == "Ultimate" && global.some_data.level >= 6 && room == Room1 && global.Evolutionprocess == true
- {
 
-	//room_goto(Roomevolution)
-	//alarm[3] = 420	
-}
-
-
-
-if (global.information == false) && room == Room1 
+if (global.information == false) && room == Room1  && global.tap == false
 && global.Evolutionprocess == false && global.evolutionscene == false
 && global.some_data.sleep == false && global.digimontier != "Egg"
 {
@@ -42,8 +42,7 @@ if (global.information == false) && room == Room1
 //info battle
 if room == Roombattle
 {
-	instance_create_depth(530,1600,-200,Oinfo1)
-	instance_create_depth(950,820,-201,Ox)
+	instance_create_depth(530,1500,-200,Oinfo1)
 	
 }
 

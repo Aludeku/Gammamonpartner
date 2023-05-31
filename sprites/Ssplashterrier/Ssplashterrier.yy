@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Terriermon",
-    "path": "folders/Sprites/Enemies/Terriermon.yy",
+    "name": "Splashes",
+    "path": "folders/Sprites/Splashes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Ssplashterrier",

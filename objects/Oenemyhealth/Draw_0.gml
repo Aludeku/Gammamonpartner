@@ -1,7 +1,7 @@
 /// @description Insert description here
 // You can write your code in this editor
 
-if global.enemyid == 0 || global.enemyid == 2 
+if global.enemytier == "rookie"
 {
 	var x1 = 630;
 	var x2 = 1035;
@@ -19,7 +19,8 @@ if global.enemyid == 0 || global.enemyid == 2
 	draw_text(815,1020,hp_current)
 }
 
-if global.enemyid == 1 || global.enemyid == 3 || global.enemyid == 4
+if global.enemytier == "champion" || global.enemytier == "Ultimate"
+|| global.enemytier == "Mega" || global.enemytier == "Mega+"
 {
 	var x1 = 625;
 	var x2 = 1035;

@@ -9,15 +9,16 @@ if !instance_exists(Oenemy16)
 	{
 		instance_create_depth(270,900,-300,Oenemy16)
 	}
-draw_set_font(Font_a1)
+draw_set_font(Font_a0)
 draw_set_color(c_black)
 draw_text(100,590,string(global.enemyname))
 	
-
 draw_set_font(Fontpixel)
 draw_text(450,800,"Type = "+ string(global.enemytype));
 draw_set_font(Font_a0)
-draw_text(350,1100,string(global.enemytier));
+draw_set_halign(fa_center)
+draw_text(525,1100,string(global.enemytier));
+draw_set_halign(fa_left)
 draw_set_font(Fontpixel)
 draw_set_color(c_purple)	
 draw_set_font(Fontpixel)

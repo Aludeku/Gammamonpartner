@@ -2,6 +2,8 @@
 // You can write your code in this editor
 global.some_data = {
 	digimonid : 0,
+	bits : 0,
+	index : 0,
 	age : 0,
 	caremistake: 0,
 	battles : 0,

@@ -1,5 +1,8 @@
 {
-  "spriteId": null,
+  "spriteId": {
+    "name": "Srandomprompt",
+    "path": "sprites/Srandomprompt/Srandomprompt.yy",
+  },
   "solid": false,
   "visible": true,
   "spriteMaskId": null,

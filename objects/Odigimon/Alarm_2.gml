@@ -1,8 +1,8 @@
 /// @description Poopneed
 // You can write your code in this editor
 randomize()
-poopneed = irandom(3)
-if poopneed == 0 && global.some_data.poop < 1
+poopneed = irandom(4)
+if poopneed == 0 && global.some_data.poop < 1 && global.some_data.hunger > 3
 {
 	global.some_data.poop += 1
 	if global.some_data.discipline >= 5

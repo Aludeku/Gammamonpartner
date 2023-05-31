@@ -3,7 +3,7 @@
 draw_self()
 draw_set_color(c_black)
 //Food Button
-if global.some_data.hunger == 4 
+if global.some_data.hunger >= 3 
 {
 	sprite_index = Stextbox
 	draw_text(140, 980, string("Your digimon is Full."))

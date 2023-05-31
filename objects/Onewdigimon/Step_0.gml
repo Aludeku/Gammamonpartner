@@ -9,6 +9,10 @@ if sprite_index == Sgammamon16
 else if sprite_index == Sagumon16
 {
 	global.some_data.digimonid = 11
+}
 
+else if sprite_index == Sgumdramon16
+{
+	global.some_data.digimonid = -4
 }
 

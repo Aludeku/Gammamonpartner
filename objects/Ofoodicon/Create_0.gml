@@ -3,8 +3,8 @@
 
 
 // Inherit the parent event
-image_xscale = 2.5
-image_yscale = 2.5
+image_xscale = 2.3
+image_yscale = 2.3
 event_inherited();
 
 
@@ -12,7 +12,16 @@ interact = function() {
 	if !image_index == 1 && global.some_data.sleep = false 
 	{
 		//instance_create_depth(415,544,-200,Ofood)
-		instance_create_depth(330, 1700,-200,Ofoodanimation)
+		if global.digimontier == "Baby I" || global.digimontier == "Baby II" 
+		|| global.digimontier == "rookie"
+		{
+			instance_create_depth(330, 1700,-200,Ofoodanimation)
+		}
+		if global.digimontier == "champion" || global.digimontier == "Ultimate" 
+		|| global.digimontier == "Mega"
+		{
+			instance_create_depth(250, 1500,-200,Ofoodanimation)
+		}
 		global.some_data.hunger += 1	
 	}
 	if image_index == 1

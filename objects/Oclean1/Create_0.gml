@@ -3,14 +3,14 @@
 
 
 // Inherit the parent event
-image_xscale = 2.5
-image_yscale = 2.5
+image_xscale = 2.3
+image_yscale = 2.3
 event_inherited();
 
 interact = function() {
 	if image_index == 0
 	{
-		instance_create_depth(900,1900,-20,Obroom)
+		instance_create_depth(Opoop.x,Opoop.y,-20,Obroom)
 		instance_destroy(Opoop)
 		if global.some_data.poop >= 1
 		{

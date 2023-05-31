@@ -73,8 +73,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Enemies16",
-    "path": "folders/Sprites/16bits/Enemies16.yy",
+    "name": "16bits",
+    "path": "folders/Sprites/16bits.yy",
   },
   "resourceVersion": "1.0",
   "name": "Sarresterdramon16",

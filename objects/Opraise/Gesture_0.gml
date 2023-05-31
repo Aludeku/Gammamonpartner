@@ -29,9 +29,9 @@ if global.praise == false
 		global.some_data.discipline -= 2
 	}
 	global.celebration = true
-	instance_destroy(Oscold)
 	alarm[0] = 90;
 }
+instance_destroy(Oscold)
 
 
 

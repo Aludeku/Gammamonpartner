@@ -4,11 +4,11 @@ if global.digimontier == "Egg"
 {
 	image_index = 1
 }
-if global.some_data.hunger >= 4
+if global.some_data.hunger >= 3
 {
 	image_index = 1
 }
-if global.some_data.hunger < 4
+if global.some_data.hunger <= 3
 {
 	image_index = 0
 }

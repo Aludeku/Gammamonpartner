@@ -7,5 +7,6 @@ draw_set_font(Fontpixel)
 draw_text(32, 32, "Time : " + string(current_hour) + ":" + string(current_minute));
 //draw_text(500,1500,string(myminute));
 //draw_text(500,1600,string(global.some_data.timerevolution));
-draw_text(32, 84, "v" + GM_version);
+//draw_text(32, 85, "v" + GM_version);
+draw_text(32, 90, "bits : " + string(global.some_data.bits));
 

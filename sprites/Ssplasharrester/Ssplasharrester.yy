@@ -69,8 +69,8 @@
   ],
   "nineSlice": null,
   "parent": {
-    "name": "Arresterdramon",
-    "path": "folders/Sprites/Enemies/Arresterdramon.yy",
+    "name": "Splashes",
+    "path": "folders/Sprites/Splashes.yy",
   },
   "resourceVersion": "1.0",
   "name": "Ssplasharrester",

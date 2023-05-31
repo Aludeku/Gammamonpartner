@@ -29,8 +29,7 @@ if Ohealthbar.hp_current <= 0
 	{
 		global.some_data.discipline -= 10
 	}
-	room_goto(Rdefeat)
-				
+	room_goto(Rdefeat)			
 }
 if Oenemyhealth.hp_current <= 0
 {
@@ -61,7 +60,7 @@ if Oenemyhealth.hp_current <= 0
 	{
 		global.some_data.discipline += 5
 	}
-	
+	global.some_data.bits += 50
 	room_goto(Rvictory)
 }
 

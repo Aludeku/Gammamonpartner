@@ -2,8 +2,8 @@
 // You can write your code in this editor
 var x1 = 585;
 var x2 = 1000;
-var y1= 850;
-var y2= 895;
+var y1= 840;
+var y2= 885;
 var amount = global.some_data.discipline / 100; 
 amount = amount * 100;
 
