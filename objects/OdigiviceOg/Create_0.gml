@@ -9,9 +9,6 @@ global.some_data.hunger -= 1
 instance_destroy(Ofloatingevo)
 global.some_data.stamina += 6
 global.some_data.battles = 0
-global.some_data.atktrain = 0
-global.some_data.hptrain = 0
-global.some_data.veltrain = 0
 //index
 if global.some_data.digimonid == -3 // egg
 {
