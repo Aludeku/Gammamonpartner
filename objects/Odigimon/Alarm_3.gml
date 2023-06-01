@@ -36,23 +36,25 @@ else if global.some_data.digimonid == 0 // gammamon
 {
 	// betelgammamon or gulusgammamon
 	if global.some_data.atktrain >= global.some_data.hptrain && 
-	global.some_data.atktrain >= global.some_data.veltrain
-		if global.some_data.discipline < 40
+		global.some_data.atktrain >= global.some_data.veltrain
 		{
-			global.some_data.digimonid = 5
-		}
-		else if global.some_data.discipline >= 40
-		{
-			global.some_data.digimonid = 1
+			if global.some_data.discipline < 40
+			{
+				global.some_data.digimonid = 5
+			}
+			else if global.some_data.discipline >= 40
+			{
+				global.some_data.digimonid = 1
+			}
 		}
 	// kausgammamon
-	if global.some_data.veltrain >= global.some_data.atktrain && 
-	global.some_data.veltrain >= global.some_data.hptrain
+	else if global.some_data.veltrain >= global.some_data.atktrain && 
+		global.some_data.veltrain >= global.some_data.hptrain
 	{
 		global.some_data.digimonid = 9
 	}
 	// wezengammamon
-	if global.some_data.hptrain >= global.some_data.atktrain && 
+	else if global.some_data.hptrain >= global.some_data.atktrain && 
 	global.some_data.hptrain >= global.some_data.veltrain
 	{
 		global.some_data.digimonid = 10

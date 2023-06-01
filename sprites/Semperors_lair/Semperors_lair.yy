@@ -2,20 +2,20 @@
   "bboxMode": 0,
   "collisionKind": 1,
   "type": 0,
-  "origin": 4,
+  "origin": 0,
   "preMultiplyAlpha": false,
   "edgeFiltering": false,
   "collisionTolerance": 0,
   "swfPrecision": 2.525,
   "bbox_left": 0,
-  "bbox_right": 135,
+  "bbox_right": 2399,
   "bbox_top": 0,
-  "bbox_bottom": 255,
+  "bbox_bottom": 2399,
   "HTile": false,
   "VTile": false,
   "For3D": false,
-  "width": 136,
-  "height": 256,
+  "width": 2400,
+  "height": 2400,
   "textureGroupId": {
     "name": "Default",
     "path": "texturegroups/Default",
@@ -24,9 +24,9 @@
   "gridX": 0,
   "gridY": 0,
   "frames": [
-    {"compositeImage":{"FrameId":{"name":"15398cd1-bf17-48da-afa3-fb46f9fe9222","path":"sprites/Semperors_lair/Semperors_lair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
-        {"FrameId":{"name":"15398cd1-bf17-48da-afa3-fb46f9fe9222","path":"sprites/Semperors_lair/Semperors_lair.yy",},"LayerId":{"name":"9add7759-3930-40b9-98f8-4c3f59a02cc8","path":"sprites/Semperors_lair/Semperors_lair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
-      ],"parent":{"name":"Semperors_lair","path":"sprites/Semperors_lair/Semperors_lair.yy",},"resourceVersion":"1.0","name":"15398cd1-bf17-48da-afa3-fb46f9fe9222","tags":[],"resourceType":"GMSpriteFrame",},
+    {"compositeImage":{"FrameId":{"name":"6d89911f-d821-4de9-a276-fbe30184af73","path":"sprites/Semperors_lair/Semperors_lair.yy",},"LayerId":null,"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},"images":[
+        {"FrameId":{"name":"6d89911f-d821-4de9-a276-fbe30184af73","path":"sprites/Semperors_lair/Semperors_lair.yy",},"LayerId":{"name":"10b95165-1d6f-4349-ab3e-6521adc3e965","path":"sprites/Semperors_lair/Semperors_lair.yy",},"resourceVersion":"1.0","name":"","tags":[],"resourceType":"GMSpriteBitmap",},
+      ],"parent":{"name":"Semperors_lair","path":"sprites/Semperors_lair/Semperors_lair.yy",},"resourceVersion":"1.0","name":"6d89911f-d821-4de9-a276-fbe30184af73","tags":[],"resourceType":"GMSpriteFrame",},
   ],
   "sequence": {
     "spriteId": {"name":"Semperors_lair","path":"sprites/Semperors_lair/Semperors_lair.yy",},
@@ -41,7 +41,7 @@
     "moments": {"Keyframes":[],"resourceVersion":"1.0","resourceType":"KeyframeStore<MomentsEventKeyframe>",},
     "tracks": [
       {"name":"frames","spriteId":null,"keyframes":{"Keyframes":[
-            {"id":"a4bd8f82-65b9-4e21-9c9e-6ccc4b7fd575","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"15398cd1-bf17-48da-afa3-fb46f9fe9222","path":"sprites/Semperors_lair/Semperors_lair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
+            {"id":"36ed23a7-a4c8-4420-a833-2e1958182030","Key":0.0,"Length":1.0,"Stretch":false,"Disabled":false,"IsCreationKey":false,"Channels":{"0":{"Id":{"name":"6d89911f-d821-4de9-a276-fbe30184af73","path":"sprites/Semperors_lair/Semperors_lair.yy",},"resourceVersion":"1.0","resourceType":"SpriteFrameKeyframe",},},"resourceVersion":"1.0","resourceType":"Keyframe<SpriteFrameKeyframe>",},
           ],"resourceVersion":"1.0","resourceType":"KeyframeStore<SpriteFrameKeyframe>",},"trackColour":0,"inheritsTrackColour":true,"builtinName":0,"traits":0,"interpolation":1,"tracks":[],"events":[],"isCreationTrack":false,"resourceVersion":"1.0","tags":[],"resourceType":"GMSpriteFramesTrack","modifiers":[],},
     ],
     "visibleRange": null,
@@ -54,8 +54,8 @@
     "backdropHeight": 768,
     "backdropXOffset": 0.0,
     "backdropYOffset": 0.0,
-    "xorigin": 68,
-    "yorigin": 128,
+    "xorigin": 0,
+    "yorigin": 0,
     "eventToFunction": {},
     "eventStubScript": null,
     "parent": {"name":"Semperors_lair","path":"sprites/Semperors_lair/Semperors_lair.yy",},
@@ -65,7 +65,7 @@
     "resourceType": "GMSequence",
   },
   "layers": [
-    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"9add7759-3930-40b9-98f8-4c3f59a02cc8","tags":[],"resourceType":"GMImageLayer",},
+    {"visible":true,"isLocked":false,"blendMode":0,"opacity":100.0,"displayName":"default","resourceVersion":"1.0","name":"10b95165-1d6f-4349-ab3e-6521adc3e965","tags":[],"resourceType":"GMImageLayer",},
   ],
   "nineSlice": null,
   "parent": {

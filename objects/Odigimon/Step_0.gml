@@ -2,7 +2,7 @@
 // You can write your code in this editor
 randomize()
 global.some_data.storedDate = date_current_datetime();
-
+//move_towards_point(0,0,2)
 var currentDate = date_current_datetime();
  /// @description level evolution
 // You can write your code in this editor
@@ -19,24 +19,35 @@ var yearsPassed = floor(daysPassed / 365);
 //if global.Evolutionprocess == true && global.evolutionscene == false
 //{
 
-if global.digimontier == "rookie" && global.some_data.level >= 2 && room == Room1 && global.tap == false
+if global.digimontier == "rookie" && global.some_data.level >= 2   && room == Room1 && global.tap == false
+|| global.digimontier == "champion" && global.some_data.level >= 4 && room == Room1 && global.tap == false 
+|| global.digimontier == "Ultimate" && global.some_data.level >= 6 && room == Room1 && global.tap == false 
  {
 	global.Evolutionprocess = true
 	if !instance_exists(Ofloatingevo)
 	{
-		instance_create_depth(500,1150,1,Ofloatingevo)
-		instance_create_depth(960,1664,1,Oevobutton)
+		if instance_exists(Odigimon)
+			{
+				if global.digimontier == "rookie" || global.digimontier == "Baby I" 
+				|| global.digimontier == "Baby II"
+				{
+					instance_create_depth(Odigimon.x-50,Odigimon.y-700,2,Ofloatingevo)
+				}
+				if global.digimontier == "champion" || global.digimontier == "Ultimate" 
+				|| global.digimontier == "Mega"
+				{
+					instance_create_depth(Odigimon.x-50,Odigimon.y-900,2,Ofloatingevo)
+				}
+				
+			}
+			
+		instance_create_depth(1664,1664,1,Oevobutton)
 	}
 }
 if global.digimontier == "champion" && global.some_data.level >= 4 && room == Room1 && global.tap == false 
 || global.digimontier == "Ultimate" && global.some_data.level >= 6 && room == Room1 && global.tap == false 
 {
 	global.Evolutionprocess = true
-	if !instance_exists(Ofloatingevo)
-	{
-		instance_create_depth(250,950,1,Ofloatingevo)
-		instance_create_depth(960,1664,1,Oevobutton)
-	}
 }
 
 if global.evolutionscene == true

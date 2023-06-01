@@ -2,9 +2,9 @@
 // You can write your code in this editor
 if sprite_index == Sgammamon16 || sprite_index == Sagumon16 || sprite_index == Sgumdramon16
 {
-	instance_create_depth(x,y,-200, Onewdigimontree)
-	instance_create_depth(288,1700,-200, Onobutton)
-	instance_create_depth(800,1700,-200, Oyesbutton)
+	instance_create_depth(Onewdigimon.x,Onewdigimon.y-200,-200, Onewdigimontree)
+	instance_create_depth(Onewdigimon.x-300,Onewdigimon.y+450,-200, Onobutton)
+	instance_create_depth(Onewdigimon.x+300,Onewdigimon.y+450,-200, Oyesbutton)
 }
 if sprite_index == Sgammamon16
 {

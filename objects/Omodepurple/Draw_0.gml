@@ -3,7 +3,7 @@
 draw_self()
 draw_set_color(c_black)
 draw_set_halign(fa_center)
-draw_text(544,815,"Fight a Mega")
+draw_text(1200,975,"Fight a Mega")
 
 
 

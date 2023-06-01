@@ -18,7 +18,7 @@ interact = function() {
 			global.digimonattack = true
 			if !instance_exists(Oattack)
 			{
-				instance_create_depth(400,1700,-10,Oattack)
+				instance_create_depth(Odigimon.x+50,Odigimon.y-200,-10,Oattack)
 			}		
 
 			if global.some_data.digimonid == 7 || global.some_data.digimonid == 26
@@ -79,7 +79,7 @@ interact = function() {
 			global.enemyattack = true
 			if !instance_exists(Oenemyattack)
 			{
-				instance_create_depth(815,1380,-10,Oenemyattack)
+				instance_create_depth(Oenemy.x-50,Oenemy.y-200,-10,Oenemyattack)
 			}
 			
 			if  global.enemyid == 7 ||  global.enemyid == 26

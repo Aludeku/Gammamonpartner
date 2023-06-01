@@ -11,7 +11,7 @@ if room == Rtrainingatk
 		global.some_data.atktrain += 5
 		instance_destroy(Otrainningbutton)
 		audio_play_sound(gym__1___2_,1,false)
-		instance_create_depth(500,1000,-20,Osmallreport)
+		instance_create_depth(1200,1000,-20,Osmallreport)
 		alarm[1] = 180
 	}
 	if global.pontuation < global.maxpontuation
@@ -39,7 +39,7 @@ if room == Rtraininghp
 		global.some_data.hptrain += 5
 		instance_destroy(Otrainningbutton)
 		audio_play_sound(gym__1___2_,1,false)
-		instance_create_depth(500,1000,-20,Osmallreport)
+		instance_create_depth(1200,1000,-20,Osmallreport)
 		alarm[1] = 180
 	}
 	if global.pontuation < global.maxpontuation
@@ -67,7 +67,7 @@ if room == Rtrainingvel
 		global.some_data.veltrain += 5
 		instance_destroy(Otrainningbutton)
 		audio_play_sound(gym__1___2_,1,false)
-		instance_create_depth(500,1000,-20,Osmallreport)
+		instance_create_depth(1200,1000,-20,Osmallreport)
 		alarm[1] = 180
 	}
 	if global.pontuation < global.maxpontuation

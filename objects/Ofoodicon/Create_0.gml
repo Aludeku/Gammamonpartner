@@ -15,12 +15,12 @@ interact = function() {
 		if global.digimontier == "Baby I" || global.digimontier == "Baby II" 
 		|| global.digimontier == "rookie"
 		{
-			instance_create_depth(330, 1700,-200,Ofoodanimation)
+			instance_create_depth(Odigimon.x -120, Odigimon.y-200,-200,Ofoodanimation)
 		}
 		if global.digimontier == "champion" || global.digimontier == "Ultimate" 
 		|| global.digimontier == "Mega"
 		{
-			instance_create_depth(250, 1500,-200,Ofoodanimation)
+			instance_create_depth(Odigimon.x-150, Odigimon.y-350,-200,Ofoodanimation)
 		}
 		global.some_data.hunger += 1	
 	}
