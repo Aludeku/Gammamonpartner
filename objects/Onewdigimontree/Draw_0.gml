@@ -3,4 +3,4 @@
 draw_self()
 draw_set_font(Font_a1)
 draw_set_halign(fa_center)
-draw_text(540,400,string("Are you sure?"))
+draw_text(1200,200,string("Are you sure?"))

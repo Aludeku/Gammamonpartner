@@ -1,9 +1,9 @@
 /// @description Insert description here
 // You can write your code in this editor
-var x1 = 585;
-var x2 = 1000;
-var y1= 840;
-var y2= 885;
+var x1 = Odiscipline.x + 70;
+var x2 = Odiscipline.x + 480;
+var y1= Odiscipline.y -15;
+var y2= Odiscipline.y +15;
 var amount = global.some_data.discipline / 100; 
 amount = amount * 100;
 

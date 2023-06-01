@@ -8,7 +8,7 @@ if room == Roomselection
 	draw_set_font(Font_a0)
 	draw_set_halign(fa_center)
 	draw_self()
-	draw_text(544,1044,"Fight a Rookie")
+	draw_text(1200,1200,"Fight a Rookie")
 }
 
 
@@ -17,5 +17,5 @@ if room == Rtrainingselection
 	draw_set_halign(fa_center)
 	draw_set_font(Font_a0)
 	draw_set_color(c_blue)
-	draw_text(544,815,"Speed +")
+	draw_text(1200,845,"Speed +")
 }

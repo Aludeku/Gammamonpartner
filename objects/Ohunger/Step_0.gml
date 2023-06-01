@@ -28,16 +28,23 @@ if global.some_data.hunger <= 2 && room == Room1
 	{
 	if !instance_exists(Ofloatingfood)
 		{
-			instance_create_depth(500,1200,2,Ofloatingfood)
+			//instance_create_depth(500,1200,2,Ofloatingfood)
+			if instance_exists(Odigimon)
+			{
+				instance_create_depth(Odigimon.x-50,Odigimon.y-700,2,Ofloatingfood)
+			}
 		}
 	}
 	if global.digimontier == "champion" || global.digimontier == "Ultimate"
 	|| global.digimontier == "Mega"
 	{
 	if !instance_exists(Ofloatingfood)
+	{
+		if instance_exists(Odigimon)
 		{
-			instance_create_depth(250,950,2,Ofloatingfood)
+			instance_create_depth(Odigimon.x-50,Odigimon.y-900,2,Ofloatingfood)
 		}
+	}
 	}
 }
 if global.digimontier == "Egg"

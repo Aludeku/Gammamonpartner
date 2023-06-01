@@ -4,5 +4,5 @@
 if global.enemyattack == true
 	if instance_exists(Odigimon)
 		{
-		move_towards_point(Odigimon.x, Odigimon.y, 9);
+		move_towards_point(Odigimon.x, Odigimon.y, 20);
 		}

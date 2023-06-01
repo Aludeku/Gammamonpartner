@@ -3,7 +3,6 @@
 if sprite_index == Sgammamon16
 {
 	global.some_data.digimonid = -3
-
 }
 
 else if sprite_index == Sagumon16

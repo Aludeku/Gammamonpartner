@@ -3,6 +3,7 @@
 image_xscale = 20
 image_yscale = 20
 global.some_data.digimonid = 0
+global.some_data.bits = 0
 global.some_data.age = 0
 global.some_data.level = 0
 global.some_data.experience = 0

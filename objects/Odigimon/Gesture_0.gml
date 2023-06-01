@@ -30,11 +30,11 @@ if (global.information == false) && room == Room1  && global.tap == false
 	audio_play_sound(Betterbeep,1,false)
 	if !instance_exists(Opraise)
 	{
-		instance_create_depth(224,1216,-10,Opraise)
+		instance_create_depth(Odigimon.x-500,Odigimon.y-900,-10,Opraise)
 	}
 	if !instance_exists(Oscold)
 	{
-		instance_create_depth(864,1216,-10,Oscold)
+		instance_create_depth(Odigimon.x+400,Odigimon.y-900,-10,Oscold)
 	}
 }
 
@@ -50,6 +50,6 @@ if room == Rvictory || room == Rdefeat
 {
 	global.damage = false
 	global.some_data.sleep = false
-	instance_create_depth(540,1200,-10,Oreportprompt)
+	instance_create_depth(1200,1200,-10,Oreportprompt)
 }
 

@@ -7,8 +7,8 @@ event_inherited();
 
 
 interact = function() {
-	instance_create_depth(128,1088,1,Oarrowleft)
-	instance_create_depth(960,1088,1,Oarrowright)
+	instance_create_depth(768,1088,1,Oarrowleft)
+	instance_create_depth(1632,1088,1,Oarrowright)
 	instance_destroy(Onewdigimontree)
 	instance_destroy(Oyesbutton)
 	instance_destroy(Onobutton)
